@@ -1,0 +1,3 @@
+# SocketFuncServer
+
+`SocketFuncServer` is...FIXME

@@ -1,0 +1,3 @@
+# SocketAuthHelper
+
+`SocketAuthHelper` is...FIXME
