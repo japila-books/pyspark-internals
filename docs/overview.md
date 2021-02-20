@@ -2,6 +2,14 @@
 
 **PySpark** is the Python API for Apache Spark.
 
+## shell.py
+
+`pyspark` shell script loads the PySpark `shell.py` script used interactively.
+
+```text
+${SPARK_HOME}/python/pyspark/shell.py
+```
+
 ## pyspark.sql Package
 
 `pyspark.sql` is a Python package for Spark SQL.
@@ -35,3 +43,33 @@ __all__ = [
     'DataFrameReader', 'DataFrameWriter', 'PandasCogroupedOps'
 ]
 ```
+
+## pandas
+
+The minimum version of [Pandas](https://pandas.pydata.org/) is `0.23.2` (and [PandasConversionMixin](PandasConversionMixin.md) asserts that).
+
+```python
+import pandas as pd
+```
+
+## pyarrow
+
+The minimum version of [PyArrow](https://pypi.org/project/pyarrow/) is `1.0.0` (and [PandasConversionMixin](PandasConversionMixin.md) asserts that).
+
+```python
+import pyarrow
+```
+
+## Python Mixins
+
+From [8.7. Class definitions](https://docs.python.org/3/reference/compound_stmts.html#class-definitions):
+
+> classdef    ::=  [decorators] "class" classname [inheritance] ":" suite
+>
+> The inheritance list usually gives a list of base classes
+
+PySpark uses mixins:
+
+* [PandasConversionMixin](PandasConversionMixin.md)
+* [PandasMapOpsMixin](PandasMapOpsMixin.md)
+* [SparkConversionMixin](SparkConversionMixin.md)

@@ -105,8 +105,13 @@ nav:
     - SocketAuthServer: SocketAuthServer.md
     - SocketFuncServer: SocketFuncServer.md
     - SocketAuthHelper: SocketAuthHelper.md
+    - PandasConversionMixin: PandasConversionMixin.md
+    - PandasMapOpsMixin: PandasMapOpsMixin.md
+    - SparkConversionMixin: SparkConversionMixin.md
   - Python Runners:
     - BasePythonRunner: BasePythonRunner.md
     - PythonRunner: PythonRunner.md
     - ArrowPythonRunner: ArrowPythonRunner.md
     - PythonUDFRunner: PythonUDFRunner.md
+  - DataFrame:
+    - toPandas: dataframe/toPandas.md
