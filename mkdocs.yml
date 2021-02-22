@@ -93,6 +93,9 @@ nav:
     - Setup: Setup.md
     - Configuration Properties: configuration-properties.md
     - PythonWorkerFactory: PythonWorkerFactory.md
+    - PythonGatewayServer: PythonGatewayServer.md
+    - Py4JServer: Py4JServer.md
+    - java_gateway.py: java_gateway.md
     - MonitorThread: MonitorThread.md
     - PythonUDF: PythonUDF.md
     - UserDefinedPythonFunction: UserDefinedPythonFunction.md
@@ -105,9 +108,11 @@ nav:
     - SocketAuthServer: SocketAuthServer.md
     - SocketFuncServer: SocketFuncServer.md
     - SocketAuthHelper: SocketAuthHelper.md
-    - PandasConversionMixin: PandasConversionMixin.md
-    - PandasMapOpsMixin: PandasMapOpsMixin.md
-    - SparkConversionMixin: SparkConversionMixin.md
+    - Mixins:
+      - PandasConversionMixin: PandasConversionMixin.md
+      - PandasMapOpsMixin: PandasMapOpsMixin.md
+      - SparkConversionMixin: SparkConversionMixin.md
+    - Logging: spark-logging.md
   - Python Runners:
     - BasePythonRunner: BasePythonRunner.md
     - PythonRunner: PythonRunner.md
