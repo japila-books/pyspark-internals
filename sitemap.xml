@@ -32,6 +32,18 @@
      <lastmod>2021-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://books.japila.pl/pyspark-internals/shell/</loc>
+     <lastmod>2021-02-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://books.japila.pl/pyspark-internals/SparkContext/</loc>
+     <lastmod>2021-02-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://books.japila.pl/pyspark-internals/SparkSession/</loc>
+     <lastmod>2021-02-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://books.japila.pl/pyspark-internals/MonitorThread/</loc>
      <lastmod>2021-02-22</lastmod>
      <changefreq>daily</changefreq>
@@ -89,6 +101,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://books.japila.pl/pyspark-internals/SparkConversionMixin/</loc>
+     <lastmod>2021-02-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://books.japila.pl/pyspark-internals/spark-logging/</loc>
      <lastmod>2021-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
