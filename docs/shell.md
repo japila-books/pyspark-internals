@@ -4,7 +4,7 @@
 
 `shell.py` defines the following variables:
 
-* `sc`
-* `spark`
-* `sql`
+* `sc` being [pyspark.SparkContext](SparkContext.md)
+* `spark` being [pyspark.sql.session.SparkSession](SparkSession.md)
+* `sql` being [SparkSession.sql](SparkSession.md#sql)
 * `sqlContext` and `sqlCtx` for compatibility

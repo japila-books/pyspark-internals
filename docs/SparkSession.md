@@ -13,3 +13,12 @@ _create_shell_session()
 `_create_shell_session` is used when:
 
 * FIXME
+
+## <span id="sql"> sql
+
+```python
+sql(
+  self, sqlQuery)
+```
+
+`sql` creates a `DataFrame` with the `sqlQuery` query executed.
