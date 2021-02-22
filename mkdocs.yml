@@ -84,6 +84,12 @@ extra:
   book:
     spark_core: https://books.japila.pl/apache-spark-internals
     spark_sql: https://jaceklaskowski.github.io/mastering-spark-sql-book
+  python:
+    version: 3.6
+    doc: https://docs.python.org/3
+  py4j:
+    version: 0.10.9
+    doc: https://www.py4j.org
 
 nav:
   - Home:
@@ -96,6 +102,9 @@ nav:
     - PythonGatewayServer: PythonGatewayServer.md
     - Py4JServer: Py4JServer.md
     - java_gateway.py: java_gateway.md
+    - shell.py: shell.md
+    - SparkContext: SparkContext.md
+    - SparkSession: SparkSession.md
     - MonitorThread: MonitorThread.md
     - PythonUDF: PythonUDF.md
     - UserDefinedPythonFunction: UserDefinedPythonFunction.md

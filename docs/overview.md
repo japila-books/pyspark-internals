@@ -4,11 +4,13 @@
 
 ## shell.py
 
-`pyspark` shell script loads the PySpark `shell.py` script used interactively.
+`pyspark` shell defines [PYTHONSTARTUP]({{ python.doc }}/using/cmdline.html#envvar-PYTHONSTARTUP) environment variable to execute [shell.py](shell.md) before the first prompt is displayed in Python interactive mode.
 
-```text
-${SPARK_HOME}/python/pyspark/shell.py
-```
+## Py4J
+
+[java_gateway](java_gateway.md) uses [Py4J - A Bridge between Python and Java]({{ py4j.doc }}):
+
+> Py4J enables Python programs running in a Python interpreter to dynamically access Java objects in a Java Virtual Machine. Methods are called as if the Java objects resided in the Python interpreter and Java collections can be accessed through standard Python collection methods. Py4J also enables Java programs to call back Python objects.
 
 ## pyspark.sql Package
 
