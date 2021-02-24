@@ -12,7 +12,12 @@ pip install ipython
 
 ```bash
 export PYSPARK_DRIVER_PYTHON=ipython
-./bin/pyspark
+```
+
+For Java 11, use `-Dio.netty.tryReflectionSetAccessible=true` (see [Downloading](http://spark.apache.org/docs/latest/index.html#downloading) in the official documentation of Apache Spark).
+
+```bash
+./bin/pyspark --driver-java-options=-Dio.netty.tryReflectionSetAccessible=true
 ```
 
 ```text

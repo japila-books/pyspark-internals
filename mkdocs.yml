@@ -97,6 +97,7 @@ nav:
   - Internals:
     - Overview: overview.md
     - Setup: Setup.md
+    - Building from Sources: building-from-sources.md
     - Configuration Properties: configuration-properties.md
     - PythonWorkerFactory: PythonWorkerFactory.md
     - PythonGatewayServer: PythonGatewayServer.md
@@ -117,6 +118,9 @@ nav:
     - SocketAuthServer: SocketAuthServer.md
     - SocketFuncServer: SocketFuncServer.md
     - SocketAuthHelper: SocketAuthHelper.md
+    - SQLContext: SQLContext.md
+    - DataFrame: DataFrame.md
+    - GroupedData: GroupedData.md
     - RelationalGroupedDataset: RelationalGroupedDataset.md
     - Mixins:
       - PandasConversionMixin: PandasConversionMixin.md
