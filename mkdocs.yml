@@ -117,11 +117,17 @@ nav:
     - SocketAuthServer: SocketAuthServer.md
     - SocketFuncServer: SocketFuncServer.md
     - SocketAuthHelper: SocketAuthHelper.md
+    - RelationalGroupedDataset: RelationalGroupedDataset.md
     - Mixins:
       - PandasConversionMixin: PandasConversionMixin.md
       - PandasMapOpsMixin: PandasMapOpsMixin.md
       - SparkConversionMixin: SparkConversionMixin.md
+      - PandasGroupedOpsMixin: PandasGroupedOpsMixin.md
     - Logging: spark-logging.md
+  - Logical Operators:
+    - FlatMapGroupsInPandas: logical-operators/FlatMapGroupsInPandas.md
+  - Physical Operators:
+    - FlatMapGroupsInPandasExec: physical-operators/FlatMapGroupsInPandasExec.md
   - Python Runners:
     - BasePythonRunner: BasePythonRunner.md
     - PythonRunner: PythonRunner.md
