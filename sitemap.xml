@@ -12,6 +12,10 @@
      <lastmod>2021-02-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://books.japila.pl/pyspark-internals/building-from-sources/</loc>
+     <lastmod>2021-02-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://books.japila.pl/pyspark-internals/configuration-properties/</loc>
      <lastmod>2021-02-24</lastmod>
      <changefreq>daily</changefreq>
@@ -89,6 +93,18 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://books.japila.pl/pyspark-internals/SocketAuthHelper/</loc>
+     <lastmod>2021-02-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://books.japila.pl/pyspark-internals/SQLContext/</loc>
+     <lastmod>2021-02-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://books.japila.pl/pyspark-internals/DataFrame/</loc>
+     <lastmod>2021-02-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://books.japila.pl/pyspark-internals/GroupedData/</loc>
      <lastmod>2021-02-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
