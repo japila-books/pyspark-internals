@@ -1,5 +1,5 @@
 site_name: The Internals of PySpark
-site_url: https://books.japila.pl/pyspark-internals
+site_url: https://books.japila.pl/pyspark-internals/
 site_author: Jacek Laskowski
 site_description: Demystifying inner-workings of PySpark
 
@@ -7,8 +7,7 @@ repo_name: pyspark-internals
 repo_url: https://github.com/japila-books/pyspark-internals
 edit_uri: edit/main/docs/
 
-copyright: |
-  Copyright &copy; 2021 Jacek Laskowski
+copyright: Copyright &copy; 2021 Jacek Laskowski
 
 theme:
   name: material
@@ -20,20 +19,22 @@ theme:
     - navigation.tabs
     - navigation.instant
     - search.suggest
+    - search.share
+    - search.highlight
     - navigation.indexes
   palette:
     - scheme: default
       primary: indigo
       accent: indigo
       toggle:
-        icon: material/weather-sunny
-        name: Switch to light mode
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
     - scheme: slate
       primary: blue
       accent: blue
       toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
+        icon: material/toggle-switch
+        name: Switch to light mode
 
 markdown_extensions:
   - admonition
@@ -92,8 +93,7 @@ extra:
     doc: https://www.py4j.org
 
 nav:
-  - Home:
-    - Welcome: index.md
+  - Home: index.md
   - Internals:
     - Overview: overview.md
     - Setup: Setup.md
@@ -110,7 +110,6 @@ nav:
     - PythonUDF: PythonUDF.md
     - UserDefinedPythonFunction: UserDefinedPythonFunction.md
     - PythonFunction: PythonFunction.md
-    - AggregateInPandasExec: AggregateInPandasExec.md
     - PythonRDD: PythonRDD.md
     - PythonForeachWriter: PythonForeachWriter.md
     - PythonAccumulatorV2: PythonAccumulatorV2.md
@@ -131,6 +130,7 @@ nav:
   - Logical Operators:
     - FlatMapGroupsInPandas: logical-operators/FlatMapGroupsInPandas.md
   - Physical Operators:
+    - AggregateInPandasExec: physical-operators/AggregateInPandasExec.md
     - FlatMapGroupsInPandasExec: physical-operators/FlatMapGroupsInPandasExec.md
   - Python Runners:
     - BasePythonRunner: BasePythonRunner.md

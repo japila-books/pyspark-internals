@@ -1,6 +1,6 @@
 # PySpark
 
-**PySpark** is the Python API for Apache Spark.
+**PySpark** is the Python frontend for Apache Spark.
 
 ## shell.py
 
