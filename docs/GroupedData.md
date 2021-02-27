@@ -9,3 +9,14 @@
 ```python
 from pyspark.sql.group import GroupedData
 ```
+
+## Creating Instance
+
+`GroupedData` takes the following to be created:
+
+* <span id="jgd"> [RelationalGroupedDataset](RelationalGroupedDataset.md)
+* <span id="df"> [DataFrame](DataFrame.md)
+
+`GroupedData` is created when:
+
+* FIXME

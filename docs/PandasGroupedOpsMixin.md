@@ -4,11 +4,8 @@
 
 ## <span id="applyInPandas"> applyInPandas
 
-```scala
-applyInPandas(
-  self,
-  func,
-  schema)
+```python
+applyInPandas(self, func, schema)
 ```
 
 `applyInPandas` creates a `DataFrame` with [flatMapGroupsInPandas](RelationalGroupedDataset.md#flatMapGroupsInPandas).
@@ -22,12 +19,29 @@ df1 = spark.createDataFrame(
 df2 = spark.createDataFrame(
     [(20000101, 1, "x"), (20000101, 2, "y")],
     ("time", "id", "v2"))
+```
+
+```python
 import pandas as pd
 def asof_join(k, l, r):
   if k == (1,):
     return pd.merge_asof(l, r, on="time", by="id")
   else:
     return pd.DataFrame(columns=['time', 'id', 'v1', 'v2'])
-df1.groupby("id").cogroup(df2.groupby("id")).applyInPandas(
+```
+
+```python
+gd1 = df1.groupby("id")
+gd2 = df2.groupby("id")
+
+gd1.cogroup(gd2).applyInPandas(
   asof_join, "time int, id int, v1 double, v2 string").show()
 ```
+
+## <span id="cogroup"> cogroup
+
+```python
+cogroup(self, other)
+```
+
+`cogroup` creates a [PandasCogroupedOps](PandasCogroupedOps.md).

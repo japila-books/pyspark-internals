@@ -104,6 +104,7 @@ nav:
     - Py4JServer: Py4JServer.md
     - java_gateway.py: java_gateway.md
     - shell.py: shell.md
+    - functions.py: functions.md
     - SparkContext: SparkContext.md
     - SparkSession: SparkSession.md
     - MonitorThread: MonitorThread.md
@@ -122,10 +123,11 @@ nav:
     - GroupedData: GroupedData.md
     - RelationalGroupedDataset: RelationalGroupedDataset.md
     - Mixins:
+      - PandasCogroupedOps: PandasCogroupedOps.md
       - PandasConversionMixin: PandasConversionMixin.md
+      - PandasGroupedOpsMixin: PandasGroupedOpsMixin.md
       - PandasMapOpsMixin: PandasMapOpsMixin.md
       - SparkConversionMixin: SparkConversionMixin.md
-      - PandasGroupedOpsMixin: PandasGroupedOpsMixin.md
     - Logging: spark-logging.md
   - Logical Operators:
     - FlatMapGroupsInPandas: logical-operators/FlatMapGroupsInPandas.md

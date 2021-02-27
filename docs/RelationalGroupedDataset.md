@@ -5,6 +5,20 @@
 !!! note "This is a stub"
     This page is a stub to describe PySpark-related methods only. Learn more about [RelationalGroupedDataset]({{ book.spark_sql }}/RelationalGroupedDataset/) in [The Internals of Spark SQL]({{ book.spark_sql }}).
 
+## <span id="flatMapCoGroupsInPandas"> flatMapCoGroupsInPandas
+
+```scala
+flatMapCoGroupsInPandas(
+  r: RelationalGroupedDataset,
+  expr: PythonUDF): DataFrame
+```
+
+`flatMapCoGroupsInPandas`...FIXME
+
+`flatMapCoGroupsInPandas` is used when:
+
+* `PandasCogroupedOps` is requested to [applyInPandas](PandasCogroupedOps.md#applyInPandas)
+
 ## <span id="flatMapGroupsInPandas"> flatMapGroupsInPandas
 
 ```scala
