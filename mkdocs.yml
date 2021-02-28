@@ -122,6 +122,8 @@ nav:
     - DataFrame: DataFrame.md
     - GroupedData: GroupedData.md
     - RelationalGroupedDataset: RelationalGroupedDataset.md
+    - UDFRegistration: UDFRegistration.md
+    - UserDefinedFunction: UserDefinedFunction.md
     - Mixins:
       - PandasCogroupedOps: PandasCogroupedOps.md
       - PandasConversionMixin: PandasConversionMixin.md
@@ -139,5 +141,9 @@ nav:
     - PythonRunner: PythonRunner.md
     - ArrowPythonRunner: ArrowPythonRunner.md
     - PythonUDFRunner: PythonUDFRunner.md
+  - Packages:
+    - pyspark.sql:
+      - udf.py: pyspark/sql/udf.md
+      - functions.py: pyspark/sql/functions.md
   - DataFrame:
     - toPandas: dataframe/toPandas.md
