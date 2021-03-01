@@ -8,7 +8,7 @@
 
 ## Py4J
 
-[java_gateway](java_gateway.md) uses [Py4J - A Bridge between Python and Java]({{ py4j.doc }}):
+[java_gateway](pyspark/java_gateway.md) uses [Py4J - A Bridge between Python and Java]({{ py4j.doc }}):
 
 > Py4J enables Python programs running in a Python interpreter to dynamically access Java objects in a Java Virtual Machine. Methods are called as if the Java objects resided in the Python interpreter and Java collections can be accessed through standard Python collection methods. Py4J also enables Java programs to call back Python objects.
 
@@ -80,7 +80,7 @@ PySpark uses mixins:
 
 **Pandas User Defined Functions** (_vectorized user defined functions_) are user-defined functions that are executed by Spark using Arrow to transfer data and Pandas to work with the data, which allows vectorized operations.
 
-Pandas UDFs are defined using [pandas_udf](functions.md#pandas_udf) function as a decorator (using `@pandas_udf(returnType, functionType)` annotation) or to wrap the function, and no additional configuration.
+Pandas UDFs are defined using [pandas_udf](pyspark/sql/pandas/functions.md#pandas_udf) function as a decorator (using `@pandas_udf(returnType, functionType)` annotation) or to wrap the function, and no additional configuration.
 
 A Pandas UDF behaves as a regular PySpark function API in general.
 

@@ -40,7 +40,7 @@ Exiting due to broken pipe from Python driver
 
 `PythonGatewayServer` uses `_PYSPARK_DRIVER_CONN_INFO_PATH` environment variable for the [path of a connection info file](#main-_PYSPARK_DRIVER_CONN_INFO_PATH) for communication between this and the Python processes.
 
-`_PYSPARK_DRIVER_CONN_INFO_PATH` is configured when [java_gateway.py](java_gateway.md) module is requested to [launch_gateway](java_gateway.md#launch_gateway).
+`_PYSPARK_DRIVER_CONN_INFO_PATH` is configured when [java_gateway.py](pyspark/java_gateway.md) module is requested to [launch_gateway](pyspark/java_gateway.md#launch_gateway).
 
 ## Logging
 

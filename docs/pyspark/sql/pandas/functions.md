@@ -1,6 +1,6 @@
 # functions.py
 
-`functions.py` defines [pandas_udf](#pandas_udf) for [pandas user defined functions](overview.md#pandas-user-defined-functions).
+`functions.py` defines [pandas_udf](#pandas_udf) for [pandas user defined functions](../../../overview.md#pandas-user-defined-functions).
 
 `functions.py` is part of `pyspark.sql.pandas` package.
 
@@ -14,7 +14,7 @@ from pyspark.sql.functions import pandas_udf
 pandas_udf(f=None, returnType=None, functionType=None)
 ```
 
-`pandas_udf` creates a [pandas user defined functions](overview.md#pandas-user-defined-functions).
+`pandas_udf` creates a [pandas user defined functions](../../../overview.md#pandas-user-defined-functions).
 
 `functionType` must be one the values from `PandasUDFType`:
 

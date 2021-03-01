@@ -1,6 +1,6 @@
 # java_gateway.py
 
-`java_gateway` Python module allows for [launching a gateway process](#launch_gateway) to establish communication channel between this and [Py4JServer](Py4JServer.md).
+`java_gateway` Python module allows for [launching a gateway process](#launch_gateway) to establish communication channel between this and [Py4JServer](../Py4JServer.md).
 
 ## <span id="launch_gateway"> launch_gateway
 
@@ -10,7 +10,7 @@ launch_gateway(
   popen_kwargs=None)
 ```
 
-`launch_gateway` reads `PYSPARK_GATEWAY_PORT` and `PYSPARK_GATEWAY_SECRET` environment variables if defined and assumes that the child Java gateway process has already been started (e.g. [PythonGatewayServer](PythonGatewayServer.md)).
+`launch_gateway` reads `PYSPARK_GATEWAY_PORT` and `PYSPARK_GATEWAY_SECRET` environment variables if defined and assumes that the child Java gateway process has already been started (e.g. [PythonGatewayServer](../PythonGatewayServer.md)).
 
 <span id="launch_gateway-command">
 
@@ -48,4 +48,4 @@ PYSPARK_PIN_THREAD | Gateway
 
 `launch_gateway` is used when:
 
-* `SparkContext` is requested to [_ensure_initialized](SparkContext.md#_ensure_initialized)
+* `SparkContext` is requested to [_ensure_initialized](../SparkContext.md#_ensure_initialized)

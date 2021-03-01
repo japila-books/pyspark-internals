@@ -102,9 +102,7 @@ nav:
     - PythonWorkerFactory: PythonWorkerFactory.md
     - PythonGatewayServer: PythonGatewayServer.md
     - Py4JServer: Py4JServer.md
-    - java_gateway.py: java_gateway.md
     - shell.py: shell.md
-    - functions.py: functions.md
     - SparkContext: SparkContext.md
     - SparkSession: SparkSession.md
     - MonitorThread: MonitorThread.md
@@ -142,8 +140,12 @@ nav:
     - ArrowPythonRunner: ArrowPythonRunner.md
     - PythonUDFRunner: PythonUDFRunner.md
   - Packages:
+    - pyspark:
+      - java_gateway.py: pyspark/java_gateway.md
     - pyspark.sql:
       - udf.py: pyspark/sql/udf.md
       - functions.py: pyspark/sql/functions.md
+    - pyspark.sql.pandas:
+      - functions.py: pyspark/sql/pandas/functions.md
   - DataFrame:
     - toPandas: dataframe/toPandas.md

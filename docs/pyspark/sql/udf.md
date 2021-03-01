@@ -16,5 +16,5 @@ _create_udf(f, returnType, evalType)
 
 `_create_udf` is used when:
 
-* [pandas_udf](../../functions.md#pandas_udf) function is used
+* [pandas_udf](pandas/functions.md#pandas_udf) function is used
 * [udf](functions.md#udf) function is used
