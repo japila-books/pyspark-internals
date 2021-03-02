@@ -1,6 +1,6 @@
 # PythonRDD
 
-`PythonRDD` is an `RDD` (`RDD[Array[Byte]]`) that uses [PythonRunner](PythonRunner.md) (to [compute a partition](#compute)).
+`PythonRDD` is an `RDD` (`RDD[Array[Byte]]`) that uses [PythonRunner](runners/PythonRunner.md) (to [compute a partition](#compute)).
 
 ## Creating Instance
 

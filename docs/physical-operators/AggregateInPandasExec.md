@@ -19,6 +19,6 @@
 doExecute(): RDD[InternalRow]
 ```
 
-`doExecute` uses [ArrowPythonRunner](../ArrowPythonRunner.md) (one per partition) to execute [PythonUDFs](#udfExpressions).
+`doExecute` uses [ArrowPythonRunner](../runners/ArrowPythonRunner.md) (one per partition) to execute [PythonUDFs](#udfExpressions).
 
 `doExecute` is part of the `SparkPlan` ([Spark SQL]({{ book.spark_sql }}/physical-operators/SparkPlan#doExecute)) abstraction.

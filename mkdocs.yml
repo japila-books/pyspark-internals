@@ -99,6 +99,7 @@ nav:
     - Setup: Setup.md
     - Building from Sources: building-from-sources.md
     - Configuration Properties: configuration-properties.md
+    - pyspark shell: pyspark.md
     - PythonWorkerFactory: PythonWorkerFactory.md
     - PythonGatewayServer: PythonGatewayServer.md
     - Py4JServer: Py4JServer.md
@@ -135,10 +136,10 @@ nav:
     - AggregateInPandasExec: physical-operators/AggregateInPandasExec.md
     - FlatMapGroupsInPandasExec: physical-operators/FlatMapGroupsInPandasExec.md
   - Python Runners:
-    - BasePythonRunner: BasePythonRunner.md
-    - PythonRunner: PythonRunner.md
-    - ArrowPythonRunner: ArrowPythonRunner.md
-    - PythonUDFRunner: PythonUDFRunner.md
+    - BasePythonRunner: runners/BasePythonRunner.md
+    - PythonRunner: runners/PythonRunner.md
+    - ArrowPythonRunner: runners/ArrowPythonRunner.md
+    - PythonUDFRunner: runners/PythonUDFRunner.md
   - Packages:
     - pyspark:
       - java_gateway.py: pyspark/java_gateway.md

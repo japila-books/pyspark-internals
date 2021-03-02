@@ -1,6 +1,6 @@
 # java_gateway.py
 
-`java_gateway` Python module allows for [launching a gateway process](#launch_gateway) to establish communication channel between this and [Py4JServer](../Py4JServer.md).
+`java_gateway` is a Python module that allows [launching a gateway process](#launch_gateway) to establish communication channel to [Py4JServer](../Py4JServer.md).
 
 ## <span id="launch_gateway"> launch_gateway
 

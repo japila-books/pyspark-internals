@@ -7,7 +7,7 @@
 * <span id="pythonExec"> [Python Executable](PythonFunction.md#pythonExec)
 * <span id="envVars"> Environment Variables (`Map[String, String]`)
 
-`PythonWorkerFactory` is created when `SparkEnv` is requested to `createPythonWorker` (when `BasePythonRunner` is requested to [compute a partition](BasePythonRunner.md#compute)).
+`PythonWorkerFactory` is created when `SparkEnv` is requested to `createPythonWorker` (when `BasePythonRunner` is requested to [compute a partition](runners/BasePythonRunner.md#compute)).
 
 ## <span id="useDaemon"> useDaemon Flag
 

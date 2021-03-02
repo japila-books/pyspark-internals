@@ -85,18 +85,18 @@ compute(
 * `SPARK_REUSE_WORKER` to be `1` based on `spark.python.worker.reuse` configuration property (default: `true`)
 * `PYSPARK_EXECUTOR_MEMORY_MB` to be the value of `spark.executor.pyspark.memory` configuration property if defined
 
-`compute` requests the executor's `SparkEnv` to `createPythonWorker` (for a `pythonExec` and the environment variables) that requests [PythonWorkerFactory](PythonWorkerFactory.md) to [create a Python worker](#create) (and give a `java.net.Socket`).
+`compute` requests the executor's `SparkEnv` to `createPythonWorker` (for a `pythonExec` and the environment variables) that requests [PythonWorkerFactory](../PythonWorkerFactory.md) to [create a Python worker](#create) (and give a `java.net.Socket`).
 
 !!! important "FIXME"
     Describe `pythonExec`.
 
 `compute` [newWriterThread] with the Python worker and the input arguments.
 
-`compute` creates and starts a [MonitorThread](MonitorThread.md) to watch the Python worker.
+`compute` creates and starts a [MonitorThread](../MonitorThread.md) to watch the Python worker.
 
 `compute` [creates a new reader iterator](#newReaderIterator) to read lines from the Python worker's stdout.
 
 `compute` is used when:
 
 * `PythonRDD` is requested to `compute`
-* [AggregateInPandasExec](physical-operators/AggregateInPandasExec.md), `ArrowEvalPythonExec`, `BatchEvalPythonExec`, `FlatMapCoGroupsInPandasExec`, `FlatMapGroupsInPandasExec` `MapInPandasExec`, `WindowInPandasExec` physical operators are executed
+* [AggregateInPandasExec](../physical-operators/AggregateInPandasExec.md), `ArrowEvalPythonExec`, `BatchEvalPythonExec`, `FlatMapCoGroupsInPandasExec`, `FlatMapGroupsInPandasExec` `MapInPandasExec`, `WindowInPandasExec` physical operators are executed

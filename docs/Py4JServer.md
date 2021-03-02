@@ -19,7 +19,7 @@ start(): Unit
 `start` is used when:
 
 * `PythonGatewayServer` is [launched](PythonGatewayServer.md#main)
-* `PythonRunner` is [launched](PythonRunner.md#main)
+* `PythonRunner` is [launched](runners/PythonRunner.md#main)
 
 ## <span id="getListeningPort"> getListeningPort
 
@@ -32,4 +32,4 @@ getListeningPort: Int
 `getListeningPort` is used when:
 
 * `PythonGatewayServer` is [launched](PythonGatewayServer.md#main)
-* `PythonRunner` is [launched](PythonRunner.md#main)
+* `PythonRunner` is [launched](runners/PythonRunner.md#main)

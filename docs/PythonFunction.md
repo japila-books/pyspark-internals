@@ -1,6 +1,6 @@
 # PythonFunction
 
-`PythonFunction` is a metadata of a Python function to be executed in [PythonRunner](PythonRunner.md).
+`PythonFunction` is a metadata of a Python function to be executed in [PythonRunner](runners/PythonRunner.md).
 
 ## Creating Instance
 
