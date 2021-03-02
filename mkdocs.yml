@@ -100,6 +100,7 @@ nav:
     - Building from Sources: building-from-sources.md
     - Configuration Properties: configuration-properties.md
     - pyspark shell: pyspark.md
+    - PythonRunner: PythonRunner.md
     - PythonWorkerFactory: PythonWorkerFactory.md
     - PythonGatewayServer: PythonGatewayServer.md
     - Py4JServer: Py4JServer.md

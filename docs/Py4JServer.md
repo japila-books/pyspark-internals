@@ -1,5 +1,7 @@
 # Py4JServer
 
+`Py4JServer` is a gateway server.
+
 ## <span id="secret"> Connection Secret
 
 ```scala
