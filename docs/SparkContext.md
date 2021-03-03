@@ -1,6 +1,6 @@
 # SparkContext
 
-`SparkContext` is a Python class.
+![SparkContext Initialization](images/SparkContext.png)
 
 ## Creating Instance
 
@@ -49,7 +49,7 @@ _ensure_initialized(
 
 `_ensure_initialized` is used when:
 
-* `SparkContext` is `__init__` and `setSystemProperty`
+* `SparkContext` is [created](#creating-instance) and `setSystemProperty`
 * [pyspark/shell.py](shell.md) is launched
 
 ## <span id="_do_init"> _do_init
