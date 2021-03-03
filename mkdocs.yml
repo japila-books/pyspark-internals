@@ -91,6 +91,7 @@ extra:
   py4j:
     version: 0.10.9
     doc: https://www.py4j.org
+    javadoc: https://www.py4j.org/_static/javadoc
 
 nav:
   - Home: index.md
@@ -99,14 +100,15 @@ nav:
     - Setup: Setup.md
     - Building from Sources: building-from-sources.md
     - Configuration Properties: configuration-properties.md
-    - pyspark shell: pyspark.md
+    - Environment Variables: environment-variables.md
+    - PySpark Shell: pyspark.md
     - PythonRunner: PythonRunner.md
-    - PythonWorkerFactory: PythonWorkerFactory.md
     - PythonGatewayServer: PythonGatewayServer.md
     - Py4JServer: Py4JServer.md
     - shell.py: shell.md
     - SparkContext: SparkContext.md
     - SparkSession: SparkSession.md
+    - PythonWorkerFactory: PythonWorkerFactory.md
     - MonitorThread: MonitorThread.md
     - PythonUDF: PythonUDF.md
     - UserDefinedPythonFunction: UserDefinedPythonFunction.md

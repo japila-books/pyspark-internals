@@ -1,6 +1,8 @@
 # PythonRunner
 
-`PythonRunner` is a command-line application to launch Python applications.
+`PythonRunner` is a [command-line application](#main) (_process_) to launch Python applications.
+
+`PythonRunner` executes [python](#main-pythonExec) as a subprocess and then has it connect back to the JVM to access system properties, etc.
 
 ## Arguments
 
@@ -14,6 +16,7 @@
 
 `main` takes the [arguments](#arguments) from command line.
 
+<span id="main-pythonExec">
 `main` determines what python executable to use based on (in that order):
 
 1. [spark.pyspark.driver.python](configuration-properties.md#spark.pyspark.driver.python) configuration property
@@ -26,7 +29,7 @@
 
 `main` waits until the gateway server has started.
 
-`main` launches a Python process with the environment variables.
+`main` launches a Python process using the [python executable](#main-pythonExec) and the following environment variables.
 
 Environment Variable | Value
 ---------------------|---------
@@ -37,6 +40,8 @@ Environment Variable | Value
  `PYSPARK_PYTHON` | [spark.pyspark.python](configuration-properties.md#spark.pyspark.python) if defined
  `PYTHONHASHSEED` | `PYTHONHASHSEED` env var if defined
  `OMP_NUM_THREADS` | `spark.driver.cores` unless defined
+
+`main` waits for the Python process to finish and requests the `Py4JServer` to [shutdown](Py4JServer.md#shutdown).
 
 ## Demo
 

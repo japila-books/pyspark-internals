@@ -1,3 +1,3 @@
-# pyspark.md Shell
+# PySpark Shell
 
 `pyspark` is a Spark shell for Python.
