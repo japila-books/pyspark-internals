@@ -1,6 +1,6 @@
 # PandasConversionMixin
 
-`PandasConversionMixin` is a Python mixin for `DataFrame` class.
+`PandasConversionMixin` is a Python mixin for [DataFrame](DataFrame.md) class.
 
 ## <span id="toPandas"> toPandas
 

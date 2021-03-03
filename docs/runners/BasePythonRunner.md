@@ -99,4 +99,4 @@ compute(
 `compute` is used when:
 
 * `PythonRDD` is requested to `compute`
-* [AggregateInPandasExec](../physical-operators/AggregateInPandasExec.md), `ArrowEvalPythonExec`, `BatchEvalPythonExec`, `FlatMapCoGroupsInPandasExec`, `FlatMapGroupsInPandasExec` `MapInPandasExec`, `WindowInPandasExec` physical operators are executed
+* [AggregateInPandasExec](../sql/AggregateInPandasExec.md), `ArrowEvalPythonExec`, `BatchEvalPythonExec`, `FlatMapCoGroupsInPandasExec`, `FlatMapGroupsInPandasExec` `MapInPandasExec`, `WindowInPandasExec` physical operators are executed

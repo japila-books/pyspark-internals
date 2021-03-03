@@ -7,7 +7,7 @@
 `PythonUDF` takes the following to be created:
 
 * <span id="name"> Name
-* <span id="func"> [PythonFunction](PythonFunction.md)
+* <span id="func"> [PythonFunction](../PythonFunction.md)
 * <span id="dataType"> `DataType` ([Spark SQL]({{ book.spark_sql }}/DataType))
 * <span id="children"> Children Catalyst Expressions ([Spark SQL]({{ book.spark_sql }}/expressions/Expression))
 * <span id="evalType"> Python Eval Type

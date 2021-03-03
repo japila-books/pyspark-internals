@@ -26,7 +26,7 @@ flatMapGroupsInPandas(
   expr: PythonUDF): DataFrame
 ```
 
-`flatMapGroupsInPandas` creates a `DataFrame` with a [FlatMapGroupsInPandas](logical-operators/FlatMapGroupsInPandas.md) logical operator.
+`flatMapGroupsInPandas` creates a `DataFrame` with a [FlatMapGroupsInPandas](FlatMapGroupsInPandas.md) logical operator.
 
 `flatMapGroupsInPandas` asserts that the input [PythonUDF](PythonUDF.md) is a grouped map udf (the [evalType](PythonUDF.md#evalType) is `PythonEvalType.SQL_GROUPED_MAP_PANDAS_UDF`).
 

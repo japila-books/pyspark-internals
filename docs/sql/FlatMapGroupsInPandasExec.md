@@ -2,7 +2,7 @@
 
 `FlatMapGroupsInPandasExec` is a unary physical operator ([Spark SQL]({{ book.spark_sql }}/physical-operators/UnaryExecNode)) to execute a [PythonUDF](#func).
 
-`FlatMapGroupsInPandasExec` represents a [FlatMapGroupsInPandas](../logical-operators/FlatMapGroupsInPandas.md) logical operator at execution time.
+`FlatMapGroupsInPandasExec` represents a [FlatMapGroupsInPandas](FlatMapGroupsInPandas.md) logical operator at execution time.
 
 ## Creating Instance
 
@@ -15,4 +15,4 @@
 
 `FlatMapGroupsInPandasExec` is created when:
 
-* `BasicOperators` ([Spark SQL]({{ book.spark_sql }}/execution-planning-strategies/BasicOperators/)) execution planning strategy is executed (on a logical query plan with [FlatMapGroupsInPandas](../logical-operators/FlatMapGroupsInPandas.md) logical operators)
+* `BasicOperators` ([Spark SQL]({{ book.spark_sql }}/execution-planning-strategies/BasicOperators/)) execution planning strategy is executed (on a logical query plan with [FlatMapGroupsInPandas](FlatMapGroupsInPandas.md) logical operators)

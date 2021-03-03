@@ -13,4 +13,4 @@
 * <span id="timeZoneId"> TimeZone ID
 * <span id="conf"> Configuration (`Map[String, String]`)
 
-`ArrowPythonRunner` is created when [AggregateInPandasExec](../physical-operators/AggregateInPandasExec.md), `ArrowEvalPythonExec`, `FlatMapGroupsInPandasExec`, `MapInPandasExec`, `WindowInPandasExec` physical operators are executed.
+`ArrowPythonRunner` is created when [AggregateInPandasExec](../sql/AggregateInPandasExec.md), `ArrowEvalPythonExec`, `FlatMapGroupsInPandasExec`, `MapInPandasExec`, `WindowInPandasExec` physical operators are executed.

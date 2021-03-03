@@ -101,17 +101,16 @@ nav:
     - Building from Sources: building-from-sources.md
     - Configuration Properties: configuration-properties.md
     - Environment Variables: environment-variables.md
+    - spark-submit: spark-submit.md
     - PySpark Shell: pyspark.md
     - PythonRunner: PythonRunner.md
     - PythonGatewayServer: PythonGatewayServer.md
     - Py4JServer: Py4JServer.md
     - shell.py: shell.md
+    - SparkConf: SparkConf.md
     - SparkContext: SparkContext.md
-    - SparkSession: SparkSession.md
     - PythonWorkerFactory: PythonWorkerFactory.md
     - MonitorThread: MonitorThread.md
-    - PythonUDF: PythonUDF.md
-    - UserDefinedPythonFunction: UserDefinedPythonFunction.md
     - PythonFunction: PythonFunction.md
     - PythonRDD: PythonRDD.md
     - PythonForeachWriter: PythonForeachWriter.md
@@ -120,17 +119,7 @@ nav:
     - SocketAuthServer: SocketAuthServer.md
     - SocketFuncServer: SocketFuncServer.md
     - SocketAuthHelper: SocketAuthHelper.md
-    - SQLContext: SQLContext.md
-    - DataFrame: DataFrame.md
-    - GroupedData: GroupedData.md
-    - RelationalGroupedDataset: RelationalGroupedDataset.md
-    - UDFRegistration: UDFRegistration.md
-    - UserDefinedFunction: UserDefinedFunction.md
     - Mixins:
-      - PandasCogroupedOps: PandasCogroupedOps.md
-      - PandasConversionMixin: PandasConversionMixin.md
-      - PandasGroupedOpsMixin: PandasGroupedOpsMixin.md
-      - PandasMapOpsMixin: PandasMapOpsMixin.md
       - SparkConversionMixin: SparkConversionMixin.md
     - Logging: spark-logging.md
   - Packages:
@@ -141,15 +130,28 @@ nav:
       - functions.py: pyspark/sql/functions.md
     - pyspark.sql.pandas:
       - functions.py: pyspark/sql/pandas/functions.md
-  - Logical Operators:
-    - FlatMapGroupsInPandas: logical-operators/FlatMapGroupsInPandas.md
-  - Physical Operators:
-    - AggregateInPandasExec: physical-operators/AggregateInPandasExec.md
-    - FlatMapGroupsInPandasExec: physical-operators/FlatMapGroupsInPandasExec.md
+  - PySpark SQL:
+    - sql/index.md
+    - SQLContext: sql/SQLContext.md
+    - SparkSession: sql/SparkSession.md
+    - DataFrame: sql/DataFrame.md
+    - PandasMapOpsMixin: sql/PandasMapOpsMixin.md
+    - PandasConversionMixin: sql/PandasConversionMixin.md
+    - PythonUDF: sql/PythonUDF.md
+    - UserDefinedFunction: sql/UserDefinedFunction.md
+    - UserDefinedPythonFunction: sql/UserDefinedPythonFunction.md
+    - GroupedData: sql/GroupedData.md
+    - PandasGroupedOpsMixin: sql/PandasGroupedOpsMixin.md
+    - PandasCogroupedOps: sql/PandasCogroupedOps.md
+    - RelationalGroupedDataset: sql/RelationalGroupedDataset.md
+    - UDFRegistration: sql/UDFRegistration.md
+    - Logical Operators:
+      - FlatMapGroupsInPandas: sql/FlatMapGroupsInPandas.md
+    - Physical Operators:
+      - AggregateInPandasExec: sql/AggregateInPandasExec.md
+      - FlatMapGroupsInPandasExec: sql/FlatMapGroupsInPandasExec.md
   - Python Runners:
     - BasePythonRunner: runners/BasePythonRunner.md
     - PythonRunner: runners/PythonRunner.md
     - ArrowPythonRunner: runners/ArrowPythonRunner.md
     - PythonUDFRunner: runners/PythonUDFRunner.md
-  - DataFrame:
-    - toPandas: dataframe/toPandas.md

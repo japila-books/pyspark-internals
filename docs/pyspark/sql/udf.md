@@ -4,7 +4,7 @@
 
 ## <span id="all"> Public Objects
 
-`udf` module defines [UDFRegistration](../../UDFRegistration.md) as the public object.
+`udf` module defines [UDFRegistration](../../sql/UDFRegistration.md) as the public object.
 
 ## <span id="_create_udf"> _create_udf
 
@@ -12,7 +12,7 @@
 _create_udf(f, returnType, evalType)
 ```
 
-`_create_udf` creates an [UserDefinedFunction](../../UserDefinedFunction.md) (with the name of the object to be the name of function `f`).
+`_create_udf` creates an [UserDefinedFunction](../../sql/UserDefinedFunction.md) (with the name of the object to be the name of function `f`).
 
 `_create_udf` is used when:
 

@@ -2,7 +2,7 @@
 
 `FlatMapGroupsInPandas` is a unary logical operator ([Spark SQL]({{ book.spark_sql }}/logical-operators/LogicalPlan/#UnaryNode)).
 
-`FlatMapGroupsInPandas` is planned as a [FlatMapGroupsInPandasExec](../physical-operators/FlatMapGroupsInPandasExec.md) physical operator.
+`FlatMapGroupsInPandas` is planned as a [FlatMapGroupsInPandasExec](FlatMapGroupsInPandasExec.md) physical operator.
 
 ## Creating Instance
 
@@ -15,4 +15,4 @@
 
 `FlatMapGroupsInPandas` is created when:
 
-* `RelationalGroupedDataset` is requested to [flatMapGroupsInPandas](../RelationalGroupedDataset.md#flatMapGroupsInPandas) (with a [PythonUDF](../PythonUDF.md))
+* `RelationalGroupedDataset` is requested to [flatMapGroupsInPandas](RelationalGroupedDataset.md#flatMapGroupsInPandas) (with a [PythonUDF](PythonUDF.md))

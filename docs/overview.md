@@ -48,7 +48,7 @@ __all__ = [
 
 ## pandas
 
-The minimum version of [Pandas](https://pandas.pydata.org/) is `0.23.2` (and [PandasConversionMixin](PandasConversionMixin.md) asserts that).
+The minimum version of [Pandas](https://pandas.pydata.org/) is `0.23.2` (and [PandasConversionMixin](sql/PandasConversionMixin.md) asserts that).
 
 ```python
 import pandas as pd
@@ -56,7 +56,7 @@ import pandas as pd
 
 ## pyarrow
 
-The minimum version of [PyArrow](https://pypi.org/project/pyarrow/) is `1.0.0` (and [PandasConversionMixin](PandasConversionMixin.md) asserts that).
+The minimum version of [PyArrow](https://pypi.org/project/pyarrow/) is `1.0.0` (and [PandasConversionMixin](sql/PandasConversionMixin.md) asserts that).
 
 ```python
 import pyarrow
@@ -72,8 +72,8 @@ From [8.7. Class definitions](https://docs.python.org/3/reference/compound_stmts
 
 PySpark uses mixins:
 
-* [PandasConversionMixin](PandasConversionMixin.md)
-* [PandasMapOpsMixin](PandasMapOpsMixin.md)
+* [PandasConversionMixin](sql/PandasConversionMixin.md)
+* [PandasMapOpsMixin](sql/PandasMapOpsMixin.md)
 * [SparkConversionMixin](SparkConversionMixin.md)
 
 ## Pandas User Defined Functions
