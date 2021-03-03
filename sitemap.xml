@@ -148,6 +148,22 @@
      <lastmod>2021-03-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://books.japila.pl/pyspark-internals/pyspark/java_gateway/</loc>
+     <lastmod>2021-03-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://books.japila.pl/pyspark-internals/pyspark/sql/udf/</loc>
+     <lastmod>2021-03-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://books.japila.pl/pyspark-internals/pyspark/sql/functions/</loc>
+     <lastmod>2021-03-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://books.japila.pl/pyspark-internals/pyspark/sql/pandas/functions/</loc>
+     <lastmod>2021-03-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://books.japila.pl/pyspark-internals/logical-operators/FlatMapGroupsInPandas/</loc>
      <lastmod>2021-03-03</lastmod>
      <changefreq>daily</changefreq>
@@ -173,22 +189,6 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://books.japila.pl/pyspark-internals/runners/PythonUDFRunner/</loc>
-     <lastmod>2021-03-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://books.japila.pl/pyspark-internals/pyspark/java_gateway/</loc>
-     <lastmod>2021-03-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://books.japila.pl/pyspark-internals/pyspark/sql/udf/</loc>
-     <lastmod>2021-03-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://books.japila.pl/pyspark-internals/pyspark/sql/functions/</loc>
-     <lastmod>2021-03-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://books.japila.pl/pyspark-internals/pyspark/sql/pandas/functions/</loc>
      <lastmod>2021-03-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
