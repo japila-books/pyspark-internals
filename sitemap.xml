@@ -24,10 +24,6 @@
      <lastmod>2021-03-04</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://books.japila.pl/pyspark-internals/spark-submit/</loc>
-     <lastmod>2021-03-04</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
      <loc>https://books.japila.pl/pyspark-internals/pyspark/</loc>
      <lastmod>2021-03-04</lastmod>
      <changefreq>daily</changefreq>
@@ -201,6 +197,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://books.japila.pl/pyspark-internals/runners/PythonUDFRunner/</loc>
+     <lastmod>2021-03-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://books.japila.pl/pyspark-internals/demo/executing-pyspark-applications-using-spark-submit/</loc>
      <lastmod>2021-03-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
