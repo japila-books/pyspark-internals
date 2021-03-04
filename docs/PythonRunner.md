@@ -1,8 +1,10 @@
 # PythonRunner
 
-`PythonRunner` is a [command-line application](#main) (_process_) to launch Python applications.
+`PythonRunner` is a [command-line application](#main) to launch Python applications.
 
-`PythonRunner` executes [python](#main-pythonExec) as a subprocess and then has it connect back to the JVM to access system properties, etc.
+`PythonRunner` is used by [spark-submit](demo/executing-pyspark-applications-using-spark-submit.md).
+
+`PythonRunner` executes a configured [python executable](#main-pythonExec) as a subprocess and then has it connect back to the JVM to access system properties, etc.
 
 ## Arguments
 

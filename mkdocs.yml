@@ -101,7 +101,6 @@ nav:
     - Building from Sources: building-from-sources.md
     - Configuration Properties: configuration-properties.md
     - Environment Variables: environment-variables.md
-    - spark-submit: spark-submit.md
     - PySpark Shell: pyspark.md
     - PythonRunner: PythonRunner.md
     - PythonGatewayServer: PythonGatewayServer.md
@@ -154,3 +153,5 @@ nav:
     - PythonRunner: runners/PythonRunner.md
     - ArrowPythonRunner: runners/ArrowPythonRunner.md
     - PythonUDFRunner: runners/PythonUDFRunner.md
+  - Demos:
+    - Executing PySpark Applications Using spark-submit: demo/executing-pyspark-applications-using-spark-submit.md
