@@ -106,7 +106,6 @@ nav:
     - PythonRunner: PythonRunner.md
     - PythonGatewayServer: PythonGatewayServer.md
     - Py4JServer: Py4JServer.md
-    - shell.py: shell.md
     - SparkConf: SparkConf.md
     - SparkContext: SparkContext.md
     - PythonWorkerFactory: PythonWorkerFactory.md
@@ -119,21 +118,12 @@ nav:
     - SocketAuthServer: SocketAuthServer.md
     - SocketFuncServer: SocketFuncServer.md
     - SocketAuthHelper: SocketAuthHelper.md
-    - Mixins:
-      - SparkConversionMixin: SparkConversionMixin.md
     - Logging: spark-logging.md
-  - Packages:
-    - pyspark:
-      - java_gateway.py: pyspark/java_gateway.md
-    - pyspark.sql:
-      - udf.py: pyspark/sql/udf.md
-      - functions.py: pyspark/sql/functions.md
-    - pyspark.sql.pandas:
-      - functions.py: pyspark/sql/pandas/functions.md
   - PySpark SQL:
     - sql/index.md
     - SQLContext: sql/SQLContext.md
     - SparkSession: sql/SparkSession.md
+    - SparkConversionMixin: sql/SparkConversionMixin.md
     - DataFrame: sql/DataFrame.md
     - PandasMapOpsMixin: sql/PandasMapOpsMixin.md
     - PandasConversionMixin: sql/PandasConversionMixin.md
@@ -150,6 +140,15 @@ nav:
     - Physical Operators:
       - AggregateInPandasExec: sql/AggregateInPandasExec.md
       - FlatMapGroupsInPandasExec: sql/FlatMapGroupsInPandasExec.md
+  - Packages:
+    - pyspark:
+      - java_gateway.py: pyspark/java_gateway.md
+      - shell.py: pyspark/shell.md
+    - pyspark.sql:
+      - udf.py: pyspark/sql/udf.md
+      - functions.py: pyspark/sql/functions.md
+    - pyspark.sql.pandas:
+      - functions.py: pyspark/sql/pandas/functions.md
   - Python Runners:
     - BasePythonRunner: runners/BasePythonRunner.md
     - PythonRunner: runners/PythonRunner.md

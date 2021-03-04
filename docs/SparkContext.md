@@ -50,7 +50,7 @@ _ensure_initialized(
 `_ensure_initialized` is used when:
 
 * `SparkContext` is [created](#creating-instance) and `setSystemProperty`
-* [pyspark/shell.py](shell.md) is launched
+* [shell.py](pyspark/shell.md) is launched
 
 ## <span id="_do_init"> _do_init
 

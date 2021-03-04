@@ -4,7 +4,7 @@
 
 ## shell.py
 
-[pyspark](pyspark.md) shell defines [PYTHONSTARTUP]({{ python.doc }}/using/cmdline.html#envvar-PYTHONSTARTUP) environment variable to execute [shell.py](shell.md) before the first prompt is displayed in Python interactive mode.
+[pyspark](pyspark.md) shell defines [PYTHONSTARTUP]({{ python.doc }}/using/cmdline.html#envvar-PYTHONSTARTUP) environment variable to execute [shell.py](pyspark/shell.md) before the first prompt is displayed in Python interactive mode.
 
 ## Py4J
 
@@ -74,7 +74,7 @@ PySpark uses mixins:
 
 * [PandasConversionMixin](sql/PandasConversionMixin.md)
 * [PandasMapOpsMixin](sql/PandasMapOpsMixin.md)
-* [SparkConversionMixin](SparkConversionMixin.md)
+* [SparkConversionMixin](sql/SparkConversionMixin.md)
 
 ## Pandas User Defined Functions
 
