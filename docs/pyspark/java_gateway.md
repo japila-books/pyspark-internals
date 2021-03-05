@@ -10,7 +10,7 @@ launch_gateway(
   popen_kwargs=None)
 ```
 
-`launch_gateway` reads `PYSPARK_GATEWAY_PORT` and `PYSPARK_GATEWAY_SECRET` environment variables if defined and assumes that the child Java gateway process has already been started (e.g. [PythonGatewayServer](../PythonGatewayServer.md)).
+`launch_gateway` reads [PYSPARK_GATEWAY_PORT](../environment-variables.md#PYSPARK_GATEWAY_PORT) and [PYSPARK_GATEWAY_SECRET](../environment-variables.md#PYSPARK_GATEWAY_SECRET) environment variables if defined and assumes that the child Java gateway process has already been started (e.g. [PythonGatewayServer](../PythonGatewayServer.md)).
 
 <span id="launch_gateway-command">
 
@@ -26,12 +26,7 @@ Otherwise, `launch_gateway` builds the command to start `spark-submit`:
 
 `launch_gateway` starts `bin/spark-submit` command and waits for a connection info file to be created at `_PYSPARK_DRIVER_CONN_INFO_PATH`. `launch_gateway` reads the port and the secret from the file once available.
 
-`launch_gateway` connects to the gateway using py4j's `ClientServer` or `JavaGateway` based on `PYSPARK_PIN_THREAD` environment variable (default: `false`).
-
-PYSPARK_PIN_THREAD | Gateway
--------------------|----------
- `true`            | `ClientServer`
- `false`           | `JavaGateway`
+`launch_gateway` connects to the gateway using py4j's `ClientServer` or `JavaGateway` based on [PYSPARK_PIN_THREAD](../environment-variables.md#PYSPARK_PIN_THREAD) environment variable.
 
 `launch_gateway` imports Spark packages and classes (using py4j):
 

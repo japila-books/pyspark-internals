@@ -37,8 +37,8 @@ Environment Variable | Value
 ---------------------|---------
  `PYTHONPATH` |
  `PYTHONUNBUFFERED` | YES
- `PYSPARK_GATEWAY_PORT` | [getListeningPort](Py4JServer.md#getListeningPort)
- `PYSPARK_GATEWAY_SECRET` | [secret](Py4JServer.md#secret)
+ [PYSPARK_GATEWAY_PORT](environment-variables.md#PYSPARK_GATEWAY_PORT) | [getListeningPort](Py4JServer.md#getListeningPort)
+ [PYSPARK_GATEWAY_SECRET](environment-variables.md#PYSPARK_GATEWAY_SECRET) | [secret](Py4JServer.md#secret)
  `PYSPARK_PYTHON` | [spark.pyspark.python](configuration-properties.md#spark.pyspark.python) if defined
  `PYTHONHASHSEED` | `PYTHONHASHSEED` env var if defined
  `OMP_NUM_THREADS` | `spark.driver.cores` unless defined
