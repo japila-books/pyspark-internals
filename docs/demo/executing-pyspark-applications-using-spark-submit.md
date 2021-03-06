@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Demo: Executing PySpark Applications Using spark-submit
 
 PySpark applications are executed using `spark-submit` ([Spark Core]({{ book.spark_core }}/tools/spark-submit)) command-line application.

@@ -85,6 +85,7 @@ extra:
   book:
     spark_core: https://books.japila.pl/apache-spark-internals
     spark_sql: https://jaceklaskowski.github.io/mastering-spark-sql-book
+    spark_k8s: https://jaceklaskowski.github.io/spark-kubernetes-book
   python:
     version: 3.6
     doc: https://docs.python.org/3
@@ -154,4 +155,6 @@ nav:
     - ArrowPythonRunner: runners/ArrowPythonRunner.md
     - PythonUDFRunner: runners/PythonUDFRunner.md
   - Demos:
+    - demo/index.md
     - Executing PySpark Applications Using spark-submit: demo/executing-pyspark-applications-using-spark-submit.md
+    - Running PySpark Application on minikube: demo/running-pyspark-application-on-minikube.md
