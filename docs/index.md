@@ -1,4 +1,6 @@
 ---
+title: PySpark
+icon: fontawesome/brands/python
 hide:
   - toc
   - navigation

@@ -1,3 +1,7 @@
+---
+status: new
+---
+
 # TorchDistributor
 
 `TorchDistributor` is a [Distributor](Distributor.md).

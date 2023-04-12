@@ -89,7 +89,7 @@ plugins:
   #         - DeveloperApi
   # https://github.com/squidfunk/mkdocs-material/issues/5241
   # # https://squidfunk.github.io/mkdocs-material/reference/#built-in-typeset-plugin
-  # - typeset
+  - typeset
 
 extra:
   book:
@@ -122,7 +122,9 @@ extra:
     DeveloperApi: developerapi
 
 nav:
-  - Home: index.md
+  - index.md
+  - ... | ml/**.md
+  - ... | sql/**.md
   - Internals:
     - Overview: overview.md
     - Setup: Setup.md
@@ -146,8 +148,6 @@ nav:
     - SocketFuncServer: SocketFuncServer.md
     - SocketAuthHelper: SocketAuthHelper.md
     - logging.md
-  - ... | ml/**.md
-  - ... | sql/**.md
   - Packages:
     - pyspark:
       - java_gateway.py: pyspark/java_gateway.md
