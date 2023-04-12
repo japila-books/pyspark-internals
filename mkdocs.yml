@@ -82,11 +82,11 @@ plugins:
   # https://squidfunk.github.io/mkdocs-material/reference/#built-in-meta-plugin
   - meta
   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/
-  - tags:
-      enabled: !ENV [CI, false]
-      tags_extra_files:
-        developer-api.md:
-          - DeveloperApi
+  # - tags:
+  #     enabled: !ENV [CI, false]
+  #     tags_extra_files:
+  #       developer-api.md:
+  #         - DeveloperApi
   # https://github.com/squidfunk/mkdocs-material/issues/5241
   # # https://squidfunk.github.io/mkdocs-material/reference/#built-in-typeset-plugin
   # - typeset
