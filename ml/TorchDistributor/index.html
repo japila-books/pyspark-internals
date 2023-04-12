@@ -27,9 +27,13 @@
     <span class=s2>&quot;--batch-size=64&quot;</span><span class=p>,</span>
     <span class=s2>&quot;--my-key=my-value&quot;</span><span class=p>)</span>
 
-<span class=c1># Started local training with 1 processes</span>
+<span class=c1># Started distributed training with 1 executor proceses</span>
+<span class=c1># NOTE: Redirects are currently not supported in Windows or MacOs.    (0 + 1) / 1]</span>
 <span class=c1># NOTE: Redirects are currently not supported in Windows or MacOs.</span>
-<span class=c1># Finished local training with 1 processes</span>
+<span class=c1># Got a=--learning-rate=1e-3, b=--batch-size=64, c=--my-key=my-value</span>
+<span class=c1># Got a=--learning-rate=1e-3, b=--batch-size=64, c=--my-key=my-value</span>
+<span class=c1># Finished distributed training with 1 executor proceses</span>
+<span class=c1># &#39;success&#39;</span>
 </code></pre></div> <h2 id=run>Running Distributed Training<a class=headerlink href=#run title="Permanent link">&para;</a></h2> <div class=highlight><pre><span></span><code><span class=n>run</span><span class=p>(</span>
     <span class=bp>self</span><span class=p>,</span>
     <span class=n>train_object</span><span class=p>:</span> <span class=n>Union</span><span class=p>[</span><span class=n>Callable</span><span class=p>,</span> <span class=nb>str</span><span class=p>],</span>
