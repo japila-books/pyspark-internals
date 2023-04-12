@@ -1,4 +1,8 @@
-# FlatMapGroupsInPandasExec
+---
+title: FlatMapGroupsInPandasExec
+---
+
+# FlatMapGroupsInPandasExec Physical Operator
 
 `FlatMapGroupsInPandasExec` is a unary physical operator ([Spark SQL]({{ book.spark_sql }}/physical-operators/UnaryExecNode)) to execute a [PythonUDF](#func).
 

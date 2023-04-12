@@ -7,7 +7,7 @@ repo_name: pyspark-internals
 repo_url: https://github.com/japila-books/pyspark-internals
 edit_uri: edit/main/docs/
 
-copyright: Copyright &copy; 2021 Jacek Laskowski
+copyright: Copyright &copy; 2023 Jacek Laskowski
 
 theme:
   name: material
@@ -16,12 +16,22 @@ theme:
     logo: material/book-open-page-variant
     repo: fontawesome/brands/github
   features:
-    - navigation.tabs
-    - navigation.instant
-    - search.suggest
-    - search.share
-    - search.highlight
+    # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#adding-annotations
+    - content.code.annotate
+    # https://squidfunk.github.io/mkdocs-material/upgrade/#contentcodecopy
+    - content.code.copy
+    - content.tooltips
     - navigation.indexes
+    - navigation.instant
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-path
+    - navigation.path
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
   palette:
     - scheme: default
       primary: indigo
@@ -38,8 +48,9 @@ theme:
 
 markdown_extensions:
   - admonition
-  - codehilite
+  - attr_list
   - footnotes
+  - md_in_html
   - toc:
       permalink: true
   - pymdownx.arithmatex
@@ -58,19 +69,41 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.tilde
 
 plugins:
   - search
   - minify:
       minify_html: true
-  - git-revision-date:
-      enabled_if_env: CI
   - awesome-pages
   - macros
+  # https://squidfunk.github.io/mkdocs-material/reference/#built-in-meta-plugin
+  - meta
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/
+  - tags:
+      enabled: !ENV [CI, false]
+      tags_extra_files:
+        developer-api.md:
+          - DeveloperApi
+  # https://github.com/squidfunk/mkdocs-material/issues/5241
+  # # https://squidfunk.github.io/mkdocs-material/reference/#built-in-typeset-plugin
+  # - typeset
 
 extra:
+  book:
+    title: PySpark
+    spark_core: https://books.japila.pl/apache-spark-internals
+    spark_sql: https://books.japila.pl/spark-sql-internals
+    spark_k8s: https://jaceklaskowski.github.io/spark-kubernetes-book
+  py4j:
+    version: 0.10.9
+    doc: https://www.py4j.org
+    javadoc: https://www.py4j.org/_static/javadoc
+  python:
+    version: 3.6
+    doc: https://docs.python.org/3
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/jaceklaskowski
@@ -79,20 +112,12 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://linkedin.com/in/jaceklaskowski
   spark:
-    version: 3.1.1
-    github: https://github.com/apache/spark/tree/v3.1.1
-    doc: http://spark.apache.org/docs/3.1.1
-  book:
-    spark_core: https://books.japila.pl/apache-spark-internals
-    spark_sql: https://jaceklaskowski.github.io/mastering-spark-sql-book
-    spark_k8s: https://jaceklaskowski.github.io/spark-kubernetes-book
-  python:
-    version: 3.6
-    doc: https://docs.python.org/3
-  py4j:
-    version: 0.10.9
-    doc: https://www.py4j.org
-    javadoc: https://www.py4j.org/_static/javadoc
+    version: 3.4.0-rc7
+    github: https://github.com/apache/spark/tree/v3.4.0-rc7
+    jira: https://issues.apache.org/jira/browse
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/#tag-icons-and-identifiers
+  tags:
+    DeveloperApi: developerapi
 
 nav:
   - Home: index.md
@@ -118,28 +143,8 @@ nav:
     - SocketAuthServer: SocketAuthServer.md
     - SocketFuncServer: SocketFuncServer.md
     - SocketAuthHelper: SocketAuthHelper.md
-    - Logging: spark-logging.md
-  - PySpark SQL:
-    - sql/index.md
-    - SQLContext: sql/SQLContext.md
-    - SparkSession: sql/SparkSession.md
-    - SparkConversionMixin: sql/SparkConversionMixin.md
-    - DataFrame: sql/DataFrame.md
-    - PandasMapOpsMixin: sql/PandasMapOpsMixin.md
-    - PandasConversionMixin: sql/PandasConversionMixin.md
-    - PythonUDF: sql/PythonUDF.md
-    - UserDefinedFunction: sql/UserDefinedFunction.md
-    - UserDefinedPythonFunction: sql/UserDefinedPythonFunction.md
-    - GroupedData: sql/GroupedData.md
-    - PandasGroupedOpsMixin: sql/PandasGroupedOpsMixin.md
-    - PandasCogroupedOps: sql/PandasCogroupedOps.md
-    - RelationalGroupedDataset: sql/RelationalGroupedDataset.md
-    - UDFRegistration: sql/UDFRegistration.md
-    - Logical Operators:
-      - FlatMapGroupsInPandas: sql/FlatMapGroupsInPandas.md
-    - Physical Operators:
-      - AggregateInPandasExec: sql/AggregateInPandasExec.md
-      - FlatMapGroupsInPandasExec: sql/FlatMapGroupsInPandasExec.md
+    - logging.md
+  - ... | sql/**.md
   - Packages:
     - pyspark:
       - java_gateway.py: pyspark/java_gateway.md
@@ -149,12 +154,5 @@ nav:
       - functions.py: pyspark/sql/functions.md
     - pyspark.sql.pandas:
       - functions.py: pyspark/sql/pandas/functions.md
-  - Python Runners:
-    - BasePythonRunner: runners/BasePythonRunner.md
-    - PythonRunner: runners/PythonRunner.md
-    - ArrowPythonRunner: runners/ArrowPythonRunner.md
-    - PythonUDFRunner: runners/PythonUDFRunner.md
-  - Demos:
-    - demo/index.md
-    - Executing PySpark Applications Using spark-submit: demo/executing-pyspark-applications-using-spark-submit.md
-    - Running PySpark Application on minikube: demo/running-pyspark-application-on-minikube.md
+  - ... | runners/**.md
+  - ... | demo/**.md

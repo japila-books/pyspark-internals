@@ -41,10 +41,11 @@ Exiting due to broken pipe from Python driver
 
 Enable `ALL` logging level for `org.apache.spark.api.python.PythonGatewayServer` logger to see what happens inside.
 
-Add the following line to `conf/log4j.properties`:
+Add the following line to `conf/log4j2.properties`:
 
 ```text
-log4j.logger.org.apache.spark.api.python.PythonGatewayServer=ALL
+logger.PythonGatewayServer.name = org.apache.spark.api.python.PythonGatewayServer
+logger.PythonGatewayServer.level = all
 ```
 
-Refer to [Logging](spark-logging.md).
+Refer to [Logging](logging.md).

@@ -1,4 +1,8 @@
-# FlatMapGroupsInPandas
+---
+title: FlatMapGroupsInPandas
+---
+
+# FlatMapGroupsInPandas Logical Operator
 
 `FlatMapGroupsInPandas` is a unary logical operator ([Spark SQL]({{ book.spark_sql }}/logical-operators/LogicalPlan/#UnaryNode)).
 

@@ -1,3 +1,7 @@
+---
+title: AggregateInPandasExec
+---
+
 # AggregateInPandasExec Physical Operator
 
 `AggregateInPandasExec` is a unary physical operator ([Spark SQL]({{ book.spark_sql }}/physical-operators/UnaryExecNode)).
