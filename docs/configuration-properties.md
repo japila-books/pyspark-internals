@@ -27,3 +27,13 @@ Used when [PythonWorkerFactory](PythonWorkerFactory.md#daemonModule) is created
 Default: (undefined)
 
 Used when [PythonWorkerFactory](PythonWorkerFactory.md#workerModule) is created
+
+## spark.sql { #spark.sql }
+
+### <span id="ARROW_PYSPARK_EXECUTION_ENABLED"><span id="arrowPySparkEnabled"> execution.arrow.pyspark.enabled { #spark.sql.execution.arrow.pyspark.enabled }
+
+**spark.sql.execution.arrow.pyspark.enabled**
+
+Enables [Arrow Optimization](arrow-optimization/index.md)
+
+Default: `false`

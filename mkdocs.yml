@@ -92,11 +92,16 @@ plugins:
   - typeset
 
 extra:
+  arrow:
+    home: https://arrow.apache.org/
   book:
     title: PySpark
     spark_core: https://books.japila.pl/apache-spark-internals
     spark_sql: https://books.japila.pl/spark-sql-internals
     spark_k8s: https://jaceklaskowski.github.io/spark-kubernetes-book
+  pandas:
+    version: 1.0.5
+    api: https://pandas.pydata.org/docs/reference/api
   py4j:
     version: 0.10.9
     doc: https://www.py4j.org
@@ -123,6 +128,9 @@ extra:
 
 nav:
   - index.md
+  - Features:
+    - features/index.md
+    - ... | arrow-optimization/**.md
   - ... | ml/**.md
   - ... | sql/**.md
   - Internals:
