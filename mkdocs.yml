@@ -131,6 +131,7 @@ nav:
   - Features:
     - features/index.md
     - ... | arrow-optimization/**.md
+    - ... | connect/**.md
   - ... | ml/**.md
   - ... | sql/**.md
   - Internals:
