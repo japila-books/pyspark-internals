@@ -76,9 +76,9 @@ PySpark uses mixins:
 * [PandasMapOpsMixin](sql/PandasMapOpsMixin.md)
 * [SparkConversionMixin](sql/SparkConversionMixin.md)
 
-## Pandas User Defined Functions
+## Pandas User-Defined Functions
 
-**Pandas User Defined Functions** (_vectorized user defined functions_) are user-defined functions that are executed by Spark using Arrow to transfer data and Pandas to work with the data, which allows vectorized operations.
+**Pandas User-Defined Functions** (_Vectorized User-Defined Functions_) are user-defined functions that are executed using Apache Arrow to transfer data and Pandas to work with the data, which allows vectorized operations.
 
 Pandas UDFs are defined using [pandas_udf](pyspark/sql/pandas/functions.md#pandas_udf) function as a decorator (using `@pandas_udf(returnType, functionType)` annotation) or to wrap the function, and no additional configuration.
 
