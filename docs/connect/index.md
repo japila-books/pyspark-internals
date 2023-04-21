@@ -1,6 +1,6 @@
 # Spark Connect
 
-PySpark supports [Spark Connect]({{ book.spark_sql }}/connect).
+PySpark supports remote connection to Spark clusters using Spark Connect ([Spark SQL]({{ book.spark_sql }}/connect)).
 
 ```console
 $ ./bin/pyspark --help
@@ -44,3 +44,12 @@ SparkSession available as 'spark'.
 >>> spark.client
 <pyspark.sql.connect.client.SparkConnectClient object at 0x7fed8867ab90>
 ```
+
+## is_remote { #is_remote }
+
+```py
+# from pyspark.sql.utils import is_remote
+is_remote() -> bool
+```
+
+`is_remote` is `True` when `SPARK_REMOTE` environment variable is defined (in `os.environ`).

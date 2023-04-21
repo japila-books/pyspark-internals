@@ -46,3 +46,14 @@ pandas_udf(
 * `PythonEvalType.SQL_GROUPED_AGG_PANDAS_UDF`
 * `PythonEvalType.SQL_MAP_PANDAS_ITER_UDF`
 * `PythonEvalType.SQL_COGROUPED_MAP_PANDAS_UDF`
+
+### _create_pandas_udf { #_create_pandas_udf }
+
+```py
+_create_pandas_udf(
+  f,
+  returnType,
+  evalType)
+```
+
+`_create_pandas_udf`...FIXME
