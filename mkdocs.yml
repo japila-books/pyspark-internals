@@ -93,6 +93,7 @@ plugins:
 
 extra:
   arrow:
+    docs: https://arrow.apache.org/docs
     home: https://arrow.apache.org/
   book:
     title: PySpark
@@ -102,13 +103,15 @@ extra:
   pandas:
     version: 1.5.0
     api: https://pandas.pydata.org/docs/reference/api
+    home: https://pandas.pydata.org/
   py4j:
     version: 0.10.9
     doc: https://www.py4j.org
     javadoc: https://www.py4j.org/_static/javadoc
   python:
     version: 3.11
-    doc: https://docs.python.org/3
+    docs: https://docs.python.org/3
+    api: https://docs.python.org/3
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/jaceklaskowski
@@ -133,6 +136,7 @@ nav:
   - Features:
     - features/index.md
     - ... | arrow-optimization/**.md
+    - ... | pandas-on-spark/**.md
     - ... | connect/**.md
   - ... | ml/**.md
   - ... | sql/**.md
@@ -163,10 +167,18 @@ nav:
     - pyspark:
       - java_gateway.py: pyspark/java_gateway.md
       - shell.py: pyspark/shell.md
+    - pyspark.pandas:
+      - pyspark/pandas/index.md
+      - pyspark/pandas/DataFrame.md
+      - pyspark/pandas/InternalFrame.md
+    - pyspark.pandas.generic:
+      - pyspark/pandas/generic/index.md
+      - pyspark/pandas/generic/Frame.md
     - pyspark.sql:
       - udf.py: pyspark/sql/udf.md
       - functions.py: pyspark/sql/functions.md
     - pyspark.sql.pandas:
+      - pyspark/sql/pandas/index.md
       - functions.py: pyspark/sql/pandas/functions.md
   - ... | runners/**.md
   - ... | demo/**.md

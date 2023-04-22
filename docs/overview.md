@@ -4,7 +4,7 @@
 
 ## shell.py
 
-[pyspark](pyspark.md) shell defines [PYTHONSTARTUP]({{ python.doc }}/using/cmdline.html#envvar-PYTHONSTARTUP) environment variable to execute [shell.py](pyspark/shell.md) before the first prompt is displayed in Python interactive mode.
+[pyspark](pyspark.md) shell defines [PYTHONSTARTUP]({{ python.docs }}/using/cmdline.html#envvar-PYTHONSTARTUP) environment variable to execute [shell.py](pyspark/shell.md) before the first prompt is displayed in Python interactive mode.
 
 ## Py4J
 

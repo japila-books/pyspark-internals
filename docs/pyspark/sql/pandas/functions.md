@@ -19,7 +19,7 @@ pandas_udf(
 
 `pandas_udf` creates a [pandas user-defined functions](../../../overview.md#pandas-user-defined-functions).
 
-`pandas_udf` [_create_pandas_udf](#_create_pandas_udf) (possibly creating a partial function with `functools.partial` ([Python]({{ python.doc }}/library/functools.html#functools.partial)) when used as a [decorator](#pandas_udf_decorator)).
+`pandas_udf` [_create_pandas_udf](#_create_pandas_udf) (possibly creating a partial function with `functools.partial` ([Python]({{ python.docs }}/library/functools.html#functools.partial)) when used as a [decorator](#pandas_udf_decorator)).
 
 ### Decorator { #pandas_udf_decorator }
 
