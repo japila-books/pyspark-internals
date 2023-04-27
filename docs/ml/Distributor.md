@@ -1,6 +1,6 @@
 # Distributor
 
-`Distributor` is the parent (_abstract_) class of [TorchDistributor](TorchDistributor.md).
+`Distributor` is the parent (_abstract_) class of [TorchDistributor](../pytorch-distributed/TorchDistributor.md).
 
 ## Creating Instance
 
@@ -30,9 +30,3 @@ get_gpus_owned(
 ```
 
 `get_gpus_owned`...FIXME
-
----
-
-`get_gpus_owned` is used when:
-
-* `TorchDistributor` is requested to [_run_local_training](TorchDistributor.md#_run_local_training) and [_get_spark_task_function](TorchDistributor.md#_get_spark_task_function)

@@ -112,6 +112,10 @@ extra:
     version: 3.11
     docs: https://docs.python.org/3
     api: https://docs.python.org/3
+  pytorch:
+    docs: https://pytorch.org/docs/stable
+    github: https://github.com/pytorch/pytorch
+    tutorials: https://pytorch.org/tutorials
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/jaceklaskowski
@@ -136,6 +140,7 @@ nav:
   - Features:
     - features/index.md
     - ... | arrow-optimization/**.md
+    - ... | pytorch-distributed/**.md
     - ... | pandas-on-spark/**.md
     - ... | connect/**.md
   - ... | ml/**.md
