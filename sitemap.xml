@@ -281,6 +281,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://books.japila.pl/pyspark-internals/sql/ArrowEvalPythonExec/</loc>
+         <lastmod>2023-04-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://books.japila.pl/pyspark-internals/sql/DataFrame/</loc>
          <lastmod>2023-04-28</lastmod>
          <changefreq>daily</changefreq>
