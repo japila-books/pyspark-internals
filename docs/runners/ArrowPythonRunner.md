@@ -1,6 +1,6 @@
 # ArrowPythonRunner
 
-`ArrowPythonRunner` is a [pyspark runner](BasePythonRunner.md) with `PythonArrowOutput` for...FIXME
+`ArrowPythonRunner` is a [BasePythonRunner](BasePythonRunner.md) with [PythonArrowOutput](PythonArrowOutput.md).
 
 ## Creating Instance
 
