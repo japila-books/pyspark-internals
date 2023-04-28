@@ -6,7 +6,7 @@
 
 `PythonRunner` takes the following to be created:
 
-* <span id="funcs"> `Seq[ChainedPythonFunctions]`
+* <span id="funcs"> `ChainedPythonFunctions`es
 
 `PythonRunner` is created (indirectly using [apply](#apply) factory method) when:
 
@@ -21,6 +21,8 @@ apply(
 ```
 
 `apply` simply creates a [PythonRunner](PythonRunner.md) for the [PythonFunction](../PythonFunction.md).
+
+---
 
 `apply` is used when:
 

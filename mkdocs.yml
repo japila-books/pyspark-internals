@@ -116,6 +116,8 @@ extra:
     docs: https://pytorch.org/docs/stable
     github: https://github.com/pytorch/pytorch
     tutorials: https://pytorch.org/tutorials
+  scala:
+    api: https://www.scala-lang.org/api/2.13.8
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/jaceklaskowski
@@ -164,6 +166,7 @@ nav:
     - PythonForeachWriter: PythonForeachWriter.md
     - PythonAccumulatorV2: PythonAccumulatorV2.md
     - PythonBroadcast: PythonBroadcast.md
+    - SimplePythonFunction: SimplePythonFunction.md
     - SocketAuthServer: SocketAuthServer.md
     - SocketFuncServer: SocketFuncServer.md
     - SocketAuthHelper: SocketAuthHelper.md

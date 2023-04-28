@@ -1,17 +1,45 @@
 # PythonFunction
 
-`PythonFunction` is a metadata of a Python function to be executed in [PythonRunner](runners/PythonRunner.md).
+`PythonFunction` is an [abstraction](#contract) of [metadata](#implementations) of a Python function (to be executed in a [BasePythonRunner](runners/BasePythonRunner.md)).
 
-## Creating Instance
+## Contract (Subset)
 
-`PythonFunction` takes the following to be created:
+### accumulator
 
-* <span id="command"> Command (`Array[Byte]`)
-* <span id="envVars"> Environment Variables (`Map[String, String]`)
-* <span id="pythonIncludes"> Python Includes (`List[String]`)
-* <span id="pythonExec"> Python Executable
-* <span id="pythonVer"> Python Version
-* <span id="broadcastVars"> Broadcast Variables with [PythonBroadcast](PythonBroadcast.md)]s
-* <span id="accumulator"> [PythonAccumulatorV2](PythonAccumulatorV2.md)
+```scala
+accumulator: PythonAccumulatorV2
+```
 
-`PythonFunction` is created when...FIXME
+[PythonAccumulatorV2](PythonAccumulatorV2.md)
+
+Used when:
+
+* `BasePythonRunner` is [created](runners/BasePythonRunner.md#accumulator)
+
+### broadcastVars { #broadcastVars }
+
+```scala
+broadcastVars: JList[Broadcast[PythonBroadcast]]
+```
+
+A collection of broadcast variables ([Spark Core]({{ book.spark_core }}/broadcast-variables/Broadcast)) with a [PythonBroadcast](PythonBroadcast.md)
+
+Used when:
+
+* `WriterThread` is created
+
+### command
+
+```scala
+command: Seq[Byte]
+```
+
+Used when:
+
+* `PythonRunner` is requested to [newWriterThread](PythonRunner.md#newWriterThread)
+* `UDFRegistration` is requested to [register a Python UDF](sql/UDFRegistration.md#registerPython) (for logging purposes only)
+* `PythonUDFRunner` is requested to [writeUDFs](runners/PythonUDFRunner.md#writeUDFs)
+
+## Implementations
+
+* [SimplePythonFunction](SimplePythonFunction.md)
