@@ -246,6 +246,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://books.japila.pl/pyspark-internals/runners/BasicPythonArrowOutput/</loc>
+         <lastmod>2023-04-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://books.japila.pl/pyspark-internals/runners/PythonArrowOutput/</loc>
          <lastmod>2023-04-28</lastmod>
          <changefreq>daily</changefreq>
