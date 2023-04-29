@@ -55,6 +55,6 @@ isScalarPythonUDF(
 
 `PythonUDF` is [scalar](#isScalarPythonUDF) for the following eval types:
 
-* `SQL_BATCHED_UDF` (`100`)
-* `SQL_SCALAR_PANDAS_UDF` (`200`)
-* `SQL_SCALAR_PANDAS_ITER_UDF` (`204`)
+* [SQL_BATCHED_UDF](../sql/PythonEvalType.md#SQL_BATCHED_UDF)
+* [SQL_SCALAR_PANDAS_UDF](../sql/PythonEvalType.md#SQL_SCALAR_PANDAS_UDF)
+* [SQL_SCALAR_PANDAS_ITER_UDF](../sql/PythonEvalType.md#SQL_SCALAR_PANDAS_ITER_UDF)

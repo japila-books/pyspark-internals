@@ -23,10 +23,10 @@ Function `f` | Description
 
 `evalType` of the a user-defined function can be one of the following:
 
-* `PythonEvalType.SQL_BATCHED_UDF`
-* `PythonEvalType.SQL_SCALAR_PANDAS_UDF`
-* `PythonEvalType.SQL_SCALAR_PANDAS_ITER_UDF`
-* `PythonEvalType.SQL_GROUPED_AGG_PANDAS_UDF`
+* [SQL_BATCHED_UDF](../sql/PythonEvalType.md#SQL_BATCHED_UDF)
+* [SQL_SCALAR_PANDAS_UDF](../sql/PythonEvalType.md#SQL_SCALAR_PANDAS_UDF)
+* [SQL_SCALAR_PANDAS_ITER_UDF](../sql/PythonEvalType.md#SQL_SCALAR_PANDAS_ITER_UDF)
+* [SQL_GROUPED_AGG_PANDAS_UDF](../sql/PythonEvalType.md#SQL_GROUPED_AGG_PANDAS_UDF)
 
 ---
 

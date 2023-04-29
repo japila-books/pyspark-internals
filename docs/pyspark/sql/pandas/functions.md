@@ -40,12 +40,12 @@ pandas_udf(
 
 `functionType` must be one the values from `PandasUDFType`:
 
-* `PythonEvalType.SQL_SCALAR_PANDAS_UDF`
-* `PythonEvalType.SQL_SCALAR_PANDAS_ITER_UDF`
-* `PythonEvalType.SQL_GROUPED_MAP_PANDAS_UDF`
-* `PythonEvalType.SQL_GROUPED_AGG_PANDAS_UDF`
-* `PythonEvalType.SQL_MAP_PANDAS_ITER_UDF`
-* `PythonEvalType.SQL_COGROUPED_MAP_PANDAS_UDF`
+* [SQL_SCALAR_PANDAS_UDF](../../../sql/PythonEvalType.md#SQL_SCALAR_PANDAS_UDF)
+* [SQL_SCALAR_PANDAS_ITER_UDF](../../../sql/PythonEvalType.md#SQL_SCALAR_PANDAS_ITER_UDF)
+* [SQL_GROUPED_MAP_PANDAS_UDF](../../../sql/PythonEvalType.md#SQL_GROUPED_MAP_PANDAS_UDF)
+* [SQL_GROUPED_AGG_PANDAS_UDF](../../../sql/PythonEvalType.md#SQL_GROUPED_AGG_PANDAS_UDF)
+* [SQL_MAP_PANDAS_ITER_UDF](../../../sql/PythonEvalType.md#SQL_MAP_PANDAS_ITER_UDF)
+* [SQL_COGROUPED_MAP_PANDAS_UDF](../../../sql/PythonEvalType.md#SQL_COGROUPED_MAP_PANDAS_UDF)
 
 ### _create_pandas_udf { #_create_pandas_udf }
 

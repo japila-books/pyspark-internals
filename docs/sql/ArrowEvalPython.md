@@ -29,5 +29,5 @@ evalType: Int
 
 `ArrowEvalPython` is given an `evalType` when [created](#creating-instance) that can only be one of the following:
 
-* `SQL_SCALAR_PANDAS_UDF` (`200`)
-* `SQL_SCALAR_PANDAS_ITER_UDF` (`204`)
+* [SQL_SCALAR_PANDAS_UDF](../sql/PythonEvalType.md#SQL_SCALAR_PANDAS_UDF)
+* [SQL_SCALAR_PANDAS_ITER_UDF](../sql/PythonEvalType.md#SQL_SCALAR_PANDAS_ITER_UDF)
