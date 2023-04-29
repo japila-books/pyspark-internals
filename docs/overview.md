@@ -75,20 +75,3 @@ PySpark uses mixins:
 * [PandasConversionMixin](sql/PandasConversionMixin.md)
 * [PandasMapOpsMixin](sql/PandasMapOpsMixin.md)
 * [SparkConversionMixin](sql/SparkConversionMixin.md)
-
-## Pandas User-Defined Functions
-
-**Pandas User-Defined Functions** (_Vectorized User-Defined Functions_) are user-defined functions that are executed using Apache Arrow to transfer data and Pandas to work with the data, which allows vectorized operations.
-
-Pandas UDFs are defined using [pandas_udf](pyspark/sql/pandas/functions.md#pandas_udf) function as a decorator (using `@pandas_udf(returnType, functionType)` annotation) or to wrap the function, and no additional configuration.
-
-A Pandas UDF behaves as a regular PySpark function API in general.
-
-The minimum versions supported:
-
-* pandas 0.23.2
-* pyarrow 1.0.0
-
-As of Spark 3.0 with Python 3.6+, using [Python type hints](https://www.python.org/dev/peps/pep-0484) to specify type hints for the pandas UDF is encouraged (instead of specifying pandas UDF type via `functionType` argument).
-
-The type hint should use `pandas.Series` in most cases (except `pandas.DataFrame`).
