@@ -221,6 +221,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://books.japila.pl/pyspark-internals/pyspark/sql/pandas/PandasUDFType/</loc>
+         <lastmod>2023-04-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://books.japila.pl/pyspark-internals/pyspark/sql/pandas/functions/</loc>
          <lastmod>2023-04-30</lastmod>
          <changefreq>daily</changefreq>
