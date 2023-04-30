@@ -43,9 +43,20 @@ def my_udaf(names: pd.Series) -> 'long':
   return pd.Series(names.count())
 ```
 
-## PandasUDFType { #PandasUDFType }
+`functionType` is also known as `evalType`.
 
-[PandasUDFType](../pyspark/sql/pandas/PandasUDFType.md)
+[SQL_SCALAR_PANDAS_UDF](../sql/PythonEvalType.md#SQL_SCALAR_PANDAS_UDF) is the default scalar UDF type.
+
+### returnType { #returnType }
+
+`@pandas_udf` decorator can optionally specify a return type (as the first positional argument or using `returnType`).
+
+A return type can be one of the names of `pyspark.sql.types.DataType` instances or the `DataType` themselves.
+
+```py
+@pandas_udf(dataType)
+@pandas_udf(returnType=dataType)
+```
 
 ## Group Aggregate pandas UDFs { #group-aggregate }
 
@@ -159,7 +170,3 @@ grouped_nums = (nums
 count_by_gid_agg = my_count("gid").alias("count")
 counts_by_gid = grouped_nums.agg(count_by_gid_agg)
 ```
-
-## Learn More
-
-* [SPARK-28264 Revisiting Python / pandas UDF](https://issues.apache.org/jira/browse/SPARK-28264)
