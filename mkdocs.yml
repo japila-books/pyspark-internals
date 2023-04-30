@@ -112,6 +112,7 @@ extra:
     version: 3.11
     docs: https://docs.python.org/3
     api: https://docs.python.org/3
+    peps: https://peps.python.org
   pytorch:
     docs: https://pytorch.org/docs/stable
     github: https://github.com/pytorch/pytorch
@@ -146,6 +147,7 @@ nav:
     - ... | pandas-on-spark/**.md
     - ... | pandas-udfs/**.md
     - ... | connect/**.md
+    - PySpark Shell: pyspark.md
   - ... | ml/**.md
   - ... | sql/**.md
   - Internals:
@@ -154,7 +156,6 @@ nav:
     - Building from Sources: building-from-sources.md
     - Configuration Properties: configuration-properties.md
     - Environment Variables: environment-variables.md
-    - PySpark Shell: pyspark.md
     - PythonRunner: PythonRunner.md
     - PythonGatewayServer: PythonGatewayServer.md
     - Py4JServer: Py4JServer.md
@@ -189,5 +190,6 @@ nav:
     - pyspark.sql.pandas:
       - pyspark/sql/pandas/index.md
       - functions.py: pyspark/sql/pandas/functions.md
+      - pyspark/sql/pandas/PandasUDFType.md
   - ... | runners/**.md
   - ... | demo/**.md

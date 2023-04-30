@@ -4,16 +4,18 @@
 
 Name | Value | PandasUDFType
 -----|-------|--------------
-[SQL_SCALAR_PANDAS_UDF](#SQL_SCALAR_PANDAS_UDF) | 200 | `SCALAR`
-[SQL_SCALAR_PANDAS_ITER_UDF](#SQL_SCALAR_PANDAS_ITER_UDF) | 200 | `SCALAR_ITER`
+[SQL_GROUPED_AGG_PANDAS_UDF](#SQL_GROUPED_AGG_PANDAS_UDF) | 202 | [GROUPED_AGG](../pyspark/sql/pandas/PandasUDFType.md#GROUPED_AGG)
+[SQL_GROUPED_MAP_PANDAS_UDF](#SQL_GROUPED_MAP_PANDAS_UDF) | 201 | [GROUPED_MAP](../pyspark/sql/pandas/PandasUDFType.md#GROUPED_MAP)
+[SQL_SCALAR_PANDAS_UDF](#SQL_SCALAR_PANDAS_UDF) | 200 | [SCALAR](../pyspark/sql/pandas/PandasUDFType.md#SCALAR)
+[SQL_SCALAR_PANDAS_ITER_UDF](#SQL_SCALAR_PANDAS_ITER_UDF) | 204 | [SCALAR_ITER](../pyspark/sql/pandas/PandasUDFType.md#SCALAR_ITER)
 
-`PythonEvalType` belongs to `org.apache.spark.api.python` Scala package with the same values defined on Python side in the `PythonEvalType` Python class (in `pyspark/rdd.py` package).
+`PythonEvalType` is defined in `org.apache.spark.api.python` Scala package with the same values defined on Python side in the [PythonEvalType](../pyspark/sql/pandas/PandasUDFType.md) Python class (in `pyspark/rdd.py` package).
 
 ## SQL_SCALAR_PANDAS_UDF { #SQL_SCALAR_PANDAS_UDF }
 
 `SQL_SCALAR_PANDAS_UDF` is among [SCALAR_TYPES](PythonUDF.md#SCALAR_TYPES) of [PythonUDF](PythonUDF.md).
 
-`SQL_SCALAR_PANDAS_UDF` is equivalent to `PandasUDFType.SCALAR`.
+`SQL_SCALAR_PANDAS_UDF` is equivalent to [PandasUDFType.SCALAR](../pyspark/sql/pandas/PandasUDFType.md#SCALAR).
 
 `SQL_SCALAR_PANDAS_UDF` (with [SQL_SCALAR_PANDAS_ITER_UDF](#SQL_SCALAR_PANDAS_ITER_UDF)) are evaluated using [ArrowEvalPython](ArrowEvalPython.md).
 
