@@ -30,6 +30,25 @@ Used when [PythonWorkerFactory](PythonWorkerFactory.md#workerModule) is created
 
 ## spark.sql.execution { #spark.sql.execution }
 
+### <span id="ARROW_EXECUTION_MAX_RECORDS_PER_BATCH"><span id="arrowMaxRecordsPerBatch"> arrow.maxRecordsPerBatch { #spark.sql.execution.arrow.maxRecordsPerBatch }
+
+**spark.sql.execution.arrow.maxRecordsPerBatch**
+
+When using Apache Arrow, the maximum number of records that can be written to a single `ArrowRecordBatch` in memory.
+
+If zero or negative there is no limit.
+
+Default: `10000`
+
+Used when:
+
+* `ApplyInPandasWithStatePythonRunner` is requested for `workerConf`
+* `ArrowEvalPythonExec` is [created](sql/ArrowEvalPythonExec.md#batchSize)
+* `Dataset` is requested to `toArrowBatchRdd`
+* `MapInBatchExec` is created
+* `SparkConnectPlanner` is requested to `handleSqlCommand`
+* `SparkConnectStreamHandler` is requested to `processAsArrowBatches`
+
 ### <span id="ARROW_PYSPARK_EXECUTION_ENABLED"><span id="arrowPySparkEnabled"> arrow.pyspark.enabled { #spark.sql.execution.arrow.pyspark.enabled }
 
 **spark.sql.execution.arrow.pyspark.enabled**
