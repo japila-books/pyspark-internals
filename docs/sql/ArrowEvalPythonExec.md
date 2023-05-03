@@ -46,6 +46,6 @@ title: ArrowEvalPythonExec
 
     `evaluate` is part of the [EvalPythonExec](EvalPythonExec.md#evaluate) abstraction.
 
-`evaluate` creates a [ArrowPythonRunner](../runners/ArrowPythonRunner.md) to [compute partitions](../runners/BasePythonRunner.md#compute).
+`evaluate` creates an [ArrowPythonRunner](../runners/ArrowPythonRunner.md) to [compute partitions](../runners/BasePythonRunner.md#compute).
 
 In the end, `evaluate` converts `ColumnarBatch`es into `InternalRow`s.
