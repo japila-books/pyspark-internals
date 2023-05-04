@@ -5,55 +5,160 @@
 `PythonWorkerFactory` takes the following to be created:
 
 * <span id="pythonExec"> [Python Executable](PythonFunction.md#pythonExec)
-* <span id="envVars"> Environment Variables (`Map[String, String]`)
+* <span id="envVars"> Environment Variables
 
-`PythonWorkerFactory` is created when `SparkEnv` is requested to `createPythonWorker` (when `BasePythonRunner` is requested to [compute a partition](runners/BasePythonRunner.md#compute)).
+`PythonWorkerFactory` is created when:
 
-## <span id="useDaemon"> useDaemon Flag
+* `SparkEnv` is requested to `createPythonWorker` (when `BasePythonRunner` is requested to [compute a partition](runners/BasePythonRunner.md#compute)).
 
-`PythonWorkerFactory` uses `useDaemon` internal flag that is the value of [spark.python.use.daemon](configuration-properties.md#PYTHON_USE_DAEMON) configuration property to decide whether to use lighter [daemon](#createThroughDaemon) or [non-daemon](#createSimpleWorker) workers.
+## useDaemon { #useDaemon }
 
-`useDaemon` flag is used when `PythonWorkerFactory` requested to [create](#create), [stop](#stopWorker) or [release](#releaseWorker) a worker and [stop a daemon module](#stopDaemon).
+`PythonWorkerFactory` initializes `useDaemon` internal flag when [created](#creating-instance).
 
-## <span id="daemonModule"> Python Daemon Module
+`useDaemon` is enabled when the following all hold:
 
-`PythonWorkerFactory` uses [spark.python.daemon.module](configuration-properties.md#PYTHON_DAEMON_MODULE) configuration property to define the **Python Daemon Module**.
+* [spark.python.use.daemon](configuration-properties.md#spark.python.use.daemon) is enabled
+* The operating system is not MS Windows (based on `os.name` JVM property) as it works on UNIX-based systems only (because it uses signals for child management)
+
+`useDaemon` flag is used when `PythonWorkerFactory` is requested for the following:
+
+* [create](#create)
+* [stopDaemon](#stopDaemon)
+* [stopWorker](#stopWorker)
+* [releaseWorker](#releaseWorker)
+
+## Daemon Process { #daemon }
+
+```scala
+daemon: Process = null
+```
+
+`daemon` is a `Process` ([Java]({{ java.api }}/java/lang/Process.html)) to control [Python worker processes](#daemonWorkers).
+
+`daemon` is uninitialized (`null`) right after `PythonWorkerFactory` is [created](#creating-instance) and right after [stopDaemon](#stopDaemon).
+
+`daemon` is initialized and immediately started when [startDaemon](#startDaemon) (and listens at [daemonPort](#daemonPort)).
+
+`daemon` is alive until [stopDaemon](#stopDaemon).
+
+Any communication with the `daemon` happens through [daemonPort](#daemonPort).
+
+### Port { #daemonPort }
+
+```scala
+daemonPort: Int = 0
+```
+
+`daemonPort` is the communication channel (port) of the [daemon](#daemon) Python process (that is known only after [startDaemon](#startDaemon)).
+
+`daemonPort` (alongside the [daemonHost](#daemonHost)) is used to open a socket stream and launch [workers](#daemonWorkers).
+
+### Python Workers { #daemonWorkers }
+
+```scala
+daemonWorkers: mutable.WeakHashMap[Socket, Int]
+```
+
+`PythonWorkerFactory` creates `daemonWorkers` internal registry of socket streams and the worker's PID when [created](#creating-instance).
+
+A new pair is added in [createSocket](#createSocket) (when [createThroughDaemon](#createThroughDaemon)).
+
+`daemonWorkers` is used when:
+
+* [create](#create) (with [useDaemon](#useDaemon) flag enabled and non-empty [idleWorkers](#idleWorkers))
+* [stopWorker](#stopWorker)
+
+## Python Modules
+
+### Daemon { #daemonModule }
+
+`PythonWorkerFactory` initializes `daemonModule` internal property for the **Python Daemon Module** when [created](#creating-instance).
+
+`daemonModule` is the value of [spark.python.daemon.module](configuration-properties.md#spark.python.daemon.module) configuration property (if defined) or `pyspark.daemon`.
 
 The Python Daemon Module is used when `PythonWorkerFactory` is requested to [create and start a daemon module](#startDaemon).
 
-## <span id="workerModule"> Python Worker Module
+### Worker { #workerModule }
 
 `PythonWorkerFactory` uses [spark.python.worker.module](configuration-properties.md#PYTHON_WORKER_MODULE) configuration property to specify the **Python Worker Module**.
 
 The Python Worker Module is used when `PythonWorkerFactory` is requested to [create and start a worker](#createSimpleWorker).
 
-## <span id="create"> Creating Python Worker
+## Creating Python Worker { #create }
 
 ```scala
-create(): Socket
+create(): (Socket, Option[Int])
 ```
 
-`create`...FIXME
+`create` branches off based on [useDaemon](#useDaemon) flag:
 
-`create` is used when `SparkEnv` is requested to `createPythonWorker`.
+* When enabled, `create` firstly checks the [idleWorkers](#idleWorkers) queue and returns one if available. Otherwise, `create` [createThroughDaemon](#createThroughDaemon)
+* When disabled, `create` [createSimpleWorker](#createSimpleWorker)
 
-## <span id="createThroughDaemon"> Creating Daemon Worker
+---
+
+`create` is used when:
+
+* `SparkEnv` is requested to `createPythonWorker`
+
+### Creating Daemon Worker { #createThroughDaemon }
 
 ```scala
-createThroughDaemon(): Socket
+createThroughDaemon(): (Socket, Option[Int])
 ```
 
-`createThroughDaemon`...FIXME
+`createThroughDaemon` [startDaemon](#startDaemon) followed by [createSocket](#createSocket).
 
-`createThroughDaemon` is used when `PythonWorkerFactory` is requested to [create a Python worker](#create) (with [useDaemon](#useDaemon) flag enabled).
+In case of a `SocketException`, `createThroughDaemon` prints out the following WARN message to the logs:
 
-### <span id="startDaemon"> Starting Python Daemon Process
+```text
+Failed to open socket to Python daemon: [exception]
+Assuming that daemon unexpectedly quit, attempting to restart
+```
+
+And then, `createThroughDaemon` [stopDaemon](#stopDaemon), [startDaemon](#startDaemon) and [createSocket](#createSocket).
+
+#### createSocket { #createSocket }
+
+```scala
+createSocket(): (Socket, Option[Int])
+```
+
+`createSocket` creates a new stream socket and connects it to the [daemonPort](#daemonPort) at the [daemonHost](#daemonHost).
+
+`createSocket` reads the PID (of the python worker behind the stream socket) and requests the [authHelper](#authHelper) to `authToServer`.
+
+In the end, `createSocket` returns the socket and the PID (after registering them in the [daemonWorkers](#daemonWorkers) registry).
+
+### Starting Python Daemon Process { #startDaemon }
 
 ```scala
 startDaemon(): Unit
 ```
 
-`startDaemon`...FIXME
+!!! note "Does nothing with `daemon` initialized"
+    `startDaemon` does nothing when [daemon](#daemon) is initialized (non-`null`) that indicates that the daemon is already up and running.
+
+`startDaemon` creates the command (using the given [pythonExec](#pythonExec) and the [daemon module](#daemonModule)):
+
+```text
+[pythonExec] -m [daemonModule]
+```
+
+`startDaemon` adds the given [envVars](#envVars) and the following (extra) environment variables to the environment of future python processes:
+
+Environment Variable | Value
+---------------------|------
+ `PYTHONPATH` | [pythonPath](#pythonPath)
+ `PYTHON_WORKER_FACTORY_SECRET` | [authHelper](#authHelper)
+ `SPARK_PREFER_IPV6` | `True` if the underlying JVM prefer IPv6 addresses (based on `java.net.preferIPv6Addresses` JVM property)
+ `PYTHONUNBUFFERED` | `YES`
+
+`startDaemon` starts a new process (that is known as the [daemon](#daemon)).
+
+`startDaemon` connects to the python process to read the [daemonPort](#daemonPort).
+
+In the end, `startDaemon` [redirectStreamsToStderr](#redirectStreamsToStderr).
 
 ## <span id="createSimpleWorker"> Creating Simple Non-Daemon Worker
 

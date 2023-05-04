@@ -1,32 +1,56 @@
 # Configuration Properties
 
-## <span id="spark.pyspark.driver.python"><span id="PYSPARK_DRIVER_PYTHON"> spark.pyspark.driver.python
+## spark.pyspark { #spark.pyspark }
+
+### <span id="PYSPARK_DRIVER_PYTHON"> driver.python { #spark.pyspark.driver.python }
+
+**spark.pyspark.driver.python**
 
 Default: (undefined)
 
-## <span id="spark.pyspark.python"><span id="PYSPARK_PYTHON"> spark.pyspark.python
+### <span id="PYSPARK_PYTHON"> python { #spark.pyspark.python }
+
+**spark.pyspark.python**
 
 Default: (undefined)
 
-## <span id="spark.python.use.daemon"><span id="PYTHON_USE_DAEMON"> spark.python.use.daemon
+## spark.python { #spark.python }
+
+### <span id="PYTHON_DAEMON_MODULE"> daemon.module { #spark.python.daemon.module }
+
+**spark.python.daemon.module**
+
+The Python module to run the daemon to execute Python workers
+
+Default: `pyspark.daemon`
+
+Used when:
+
+* `PythonWorkerFactory` is [created](PythonWorkerFactory.md#daemonModule)
+
+### <span id="PYTHON_USE_DAEMON"> use.daemon { #spark.python.use.daemon }
+
+**spark.python.use.daemon**
 
 Because forking processes from Java is expensive, we prefer to launch a single Python daemon, `pyspark/daemon.py` (by default) and tell it to fork new workers for our tasks. This daemon currently only works on UNIX-based systems now because it uses signals for child management, so we can also fall back to launching workers, `pyspark/worker.py` (by default) directly.
 
 Default: `true` (always disabled on Windows)
 
-Used when [PythonWorkerFactory](PythonWorkerFactory.md#useDaemon) is created
+Used when:
 
-## <span id="spark.python.daemon.module"><span id="PYTHON_DAEMON_MODULE"> spark.python.daemon.module
+* `PythonWorkerFactory` is [created](PythonWorkerFactory.md#useDaemon)
 
-Default: `pyspark.daemon`
+### <span id="PYTHON_WORKER_MODULE"> worker.module { #spark.python.worker.module }
 
-Used when [PythonWorkerFactory](PythonWorkerFactory.md#daemonModule) is created
+**spark.python.worker.module**
 
-## <span id="spark.python.worker.module"><span id="PYTHON_WORKER_MODULE"> spark.python.worker.module
+The Python module to run a Python worker
 
-Default: (undefined)
+Default: `pyspark.worker`
 
-Used when [PythonWorkerFactory](PythonWorkerFactory.md#workerModule) is created
+Used when:
+
+* `PythonWorkerFactory` is [created](PythonWorkerFactory.md#workerModule)
 
 ## spark.sql.execution { #spark.sql.execution }
 
@@ -73,9 +97,7 @@ Used when:
 
 * `ApplyInPandasWithStatePythonRunner` and [ArrowPythonRunner](runners/ArrowPythonRunner.md#bufferSize) are created (and initialize [bufferSize](runners/BasePythonRunner.md#bufferSize))
 
-## spark.sql.execution.pyspark { #spark.sql.execution.pyspark }
-
-### <span id="PYSPARK_SIMPLIFIEID_TRACEBACK"><span id="pysparkSimplifiedTraceback"> udf.simplifiedTraceback.enabled { #spark.sql.execution.pyspark.udf.simplifiedTraceback.enabled }
+### <span id="PYSPARK_SIMPLIFIEID_TRACEBACK"><span id="pysparkSimplifiedTraceback"> pyspark.udf.simplifiedTraceback.enabled { #spark.sql.execution.pyspark.udf.simplifiedTraceback.enabled }
 
 **spark.sql.execution.pyspark.udf.simplifiedTraceback.enabled**
 

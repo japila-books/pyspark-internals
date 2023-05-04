@@ -100,6 +100,8 @@ extra:
     spark_core: https://books.japila.pl/apache-spark-internals
     spark_sql: https://books.japila.pl/spark-sql-internals
     spark_k8s: https://jaceklaskowski.github.io/spark-kubernetes-book
+  java:
+    api: https://docs.oracle.com/en/java/javase/17/docs/api/java.base
   pandas:
     version: 1.5.0
     api: https://pandas.pydata.org/docs/reference/api
