@@ -206,6 +206,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://books.japila.pl/pyspark-internals/pyspark/sql/UserDefinedFunction/</loc>
+         <lastmod>2023-05-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://books.japila.pl/pyspark-internals/pyspark/sql/functions/</loc>
          <lastmod>2023-05-04</lastmod>
          <changefreq>daily</changefreq>
@@ -387,11 +392,6 @@
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/sql/UDFRegistration/</loc>
-         <lastmod>2023-05-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://books.japila.pl/pyspark-internals/sql/UserDefinedFunction/</loc>
          <lastmod>2023-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
