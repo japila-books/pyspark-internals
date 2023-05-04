@@ -23,7 +23,7 @@ Name | Value | PandasUDFType
 
 * `pyspark/worker.py` is requested to `read_single_udf` and `read_udfs`
 * `UDFRegistration` is requested to [register a Python UDF](UDFRegistration.md#register)
-* `UserDefinedFunction` is requested to [returnType](UserDefinedFunction.md#returnType)
+* `UserDefinedFunction` is requested to [returnType](../pyspark/sql/UserDefinedFunction.md#returnType)
 * `pyspark/pandas/functions.py` is requested to `_create_pandas_udf` and `pandas_udf`
 
 ## SQL_SCALAR_PANDAS_ITER_UDF { #SQL_SCALAR_PANDAS_ITER_UDF }

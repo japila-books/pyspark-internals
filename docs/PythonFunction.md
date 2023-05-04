@@ -1,6 +1,18 @@
 # PythonFunction
 
-`PythonFunction` is an [abstraction](#contract) of [metadata](#implementations) of a Python function (to be executed in a [BasePythonRunner](runners/BasePythonRunner.md)).
+`PythonFunction` is an [abstraction](#contract) of the [metadata](#implementations) of a [Python function](sql/PythonUDF.md#func) of a [PythonUDF](sql/PythonUDF.md).
+
+`PythonFunction` is executed in a [BasePythonRunner](runners/BasePythonRunner.md).
+
+`PythonFunction` is used to create the following:
+
+* [PythonRDD](PythonRDD.md#func)
+* [PythonRunner](PythonRunner.md#apply)
+* [PythonForeachWriter](PythonForeachWriter.md#func)
+* [UserDefinedPythonFunction](sql/UserDefinedPythonFunction.md#func)
+
+!!! note "ChainedPythonFunctions"
+    `ChainedPythonFunctions` is a collection of chained `PythonFunction`s.
 
 ## Contract (Subset)
 

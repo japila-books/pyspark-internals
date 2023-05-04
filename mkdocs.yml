@@ -189,6 +189,7 @@ nav:
     - pyspark.sql:
       - udf.py: pyspark/sql/udf.md
       - functions.py: pyspark/sql/functions.md
+      - pyspark/sql/UserDefinedFunction.md
     - pyspark.sql.pandas:
       - pyspark/sql/pandas/index.md
       - functions.py: pyspark/sql/pandas/functions.md
