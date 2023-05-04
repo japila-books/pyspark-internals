@@ -1,15 +1,31 @@
 # PythonWorkerFactory
 
+`PythonWorkerFactory` is a factory of [Python workers](#create) to execute [PythonFunction](PythonFunction.md)s.
+
+![PythonWorkerFactory](images/PythonWorkerFactory.png)
+
+!!! note
+    There could be many `PythonWorkerFactory`s on a single executor (one for every pair of the [pythonExec](#pythonExec) and the [envVars](#envVars)).
+
 ## Creating Instance
 
 `PythonWorkerFactory` takes the following to be created:
 
-* <span id="pythonExec"> [Python Executable](PythonFunction.md#pythonExec)
+* [Python Executable](#pythonExec)
 * <span id="envVars"> Environment Variables
 
 `PythonWorkerFactory` is created when:
 
 * `SparkEnv` is requested to `createPythonWorker` (when `BasePythonRunner` is requested to [compute a partition](runners/BasePythonRunner.md#compute)).
+
+### Python Executable { #pythonExec }
+
+`PythonWorkerFactory` is given a Python executable (`pythonExec`) when [created](#creating-instance).
+
+The Python executable is the [pythonExec](PythonFunction.md#pythonExec) of the first [PythonFunction](PythonFunction.md) (of all the Python UDFs to execute by [BasePythonRunner](runners/BasePythonRunner.md)).
+
+!!! note
+    It is assumed that all [PythonFunction](PythonFunction.md)s (of a [BasePythonRunner](runners/BasePythonRunner.md)) should have the same Python executable, version and env vars. That is why it is safe to use the first `PythonFunction`.
 
 ## useDaemon { #useDaemon }
 
@@ -90,7 +106,7 @@ The Python Worker Module is used when `PythonWorkerFactory` is requested to [cre
 create(): (Socket, Option[Int])
 ```
 
-`create` branches off based on [useDaemon](#useDaemon) flag:
+`create` branches off based on the [useDaemon](#useDaemon) flag:
 
 * When enabled, `create` firstly checks the [idleWorkers](#idleWorkers) queue and returns one if available. Otherwise, `create` [createThroughDaemon](#createThroughDaemon)
 * When disabled, `create` [createSimpleWorker](#createSimpleWorker)

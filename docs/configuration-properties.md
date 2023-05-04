@@ -34,7 +34,7 @@ Used when:
 
 Because forking processes from Java is expensive, we prefer to launch a single Python daemon, `pyspark/daemon.py` (by default) and tell it to fork new workers for our tasks. This daemon currently only works on UNIX-based systems now because it uses signals for child management, so we can also fall back to launching workers, `pyspark/worker.py` (by default) directly.
 
-Default: `true` (always disabled on Windows)
+Default: `true` (unless PySpark runs on Windows)
 
 Used when:
 
