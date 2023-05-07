@@ -36,7 +36,9 @@
 root
  |-- name: string (nullable = true)
  |-- age: long (nullable = true)
-</code></pre></div> <div class=highlight><pre><span></span><code><span class=n>df</span><span class=o>.</span><span class=n>select</span><span class=p>(</span><span class=n>to_upper</span><span class=p>(</span><span class=n>df</span><span class=o>.</span><span class=n>name</span><span class=p>)</span><span class=o>.</span><span class=n>alias</span><span class=p>(</span><span class=s2>&quot;upper_name&quot;</span><span class=p>))</span><span class=o>.</span><span class=n>show</span><span class=p>()</span>
+</code></pre></div> <div class=highlight><pre><span></span><code><span class=p>(</span><span class=n>df</span>
+  <span class=o>.</span><span class=n>select</span><span class=p>(</span><span class=n>to_upper</span><span class=p>(</span><span class=n>df</span><span class=o>.</span><span class=n>name</span><span class=p>)</span><span class=o>.</span><span class=n>alias</span><span class=p>(</span><span class=s2>&quot;upper_name&quot;</span><span class=p>))</span>
+  <span class=o>.</span><span class=n>show</span><span class=p>())</span>
 </code></pre></div> <div class=highlight><pre><span></span><code>+----------+
 |upper_name|
 +----------+
