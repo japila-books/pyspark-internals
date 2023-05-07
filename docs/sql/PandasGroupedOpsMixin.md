@@ -34,7 +34,7 @@ pandas_udf | Value
 
 `applyInPandas` creates a `Column` wtih the `pandas_udf` applied to all the columns of the [DataFrame](GroupedData.md#_df) of this [GroupedData](GroupedData.md).
 
-`applyInPandas` executes `flatMapGroupsInPandas` with the underlying Catalyst expression of the `Column` with the `pandas_udf` applied.
+`applyInPandas` requests the [RelationalGroupedDataset](#_jgd) to [flatMapGroupsInPandas](RelationalGroupedDataset.md#flatMapGroupsInPandas) with the underlying Catalyst expression of the `Column` with the `pandas_udf`.
 
 In the end, `applyInPandas` creates a [DataFrame](DataFrame.md) with the result.
 
