@@ -346,6 +346,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://books.japila.pl/pyspark-internals/sql/PandasGroupUtils/</loc>
+         <lastmod>2023-05-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://books.japila.pl/pyspark-internals/sql/PandasGroupedOpsMixin/</loc>
          <lastmod>2023-05-07</lastmod>
          <changefreq>daily</changefreq>
