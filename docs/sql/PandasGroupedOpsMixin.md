@@ -2,46 +2,48 @@
 
 `PandasGroupedOpsMixin` is a Python mixin for [GroupedData](GroupedData.md) class.
 
-## <span id="applyInPandas"> applyInPandas
+## applyInPandas { #applyInPandas }
 
-```python
-applyInPandas(self, func, schema)
+```py
+applyInPandas(
+  self,
+  func: "PandasGroupedMapFunction", # (1)!
+  schema: Union[StructType, str]
+) -> DataFrame
 ```
 
-`applyInPandas` creates a `DataFrame` with [flatMapGroupsInPandas](RelationalGroupedDataset.md#flatMapGroupsInPandas).
-
-### <span id="applyInPandas-example"> Example
-
-```python
-df1 = spark.createDataFrame(
-    [(20000101, 1, 1.0), (20000101, 2, 2.0), (20000102, 1, 3.0), (20000102, 2, 4.0)],
-    ("time", "id", "v1"))
-df2 = spark.createDataFrame(
-    [(20000101, 1, "x"), (20000101, 2, "y")],
-    ("time", "id", "v2"))
+1. 
+```py
+from pandas.core.frame import DataFrame as PandasDataFrame
+DataFrameLike = PandasDataFrame
+PandasGroupedMapFunction = Union[
+  # func: pandas.DataFrame -> pandas.DataFrame
+  Callable[[DataFrameLike], DataFrameLike],
+  # func: (groupKey(s), pandas.DataFrame) -> pandas.DataFrame
+  Callable[[Any, DataFrameLike], DataFrameLike],
+]
 ```
 
-```python
-import pandas as pd
-def asof_join(k, l, r):
-  if k == (1,):
-    return pd.merge_asof(l, r, on="time", by="id")
-  else:
-    return pd.DataFrame(columns=['time', 'id', 'v1', 'v2'])
+`applyInPandas` creates a [pandas_udf](../pyspark/sql/pandas/functions.md#pandas_udf) with the following:
+
+pandas_udf | Value
+-----------|------
+ `f` | The given `func`
+ `returnType` | The given `schema`
+ `functionType` | [PandasUDFType.GROUPED_MAP](../pyspark/sql/pandas/PandasUDFType.md#GROUPED_MAP)
+
+`applyInPandas` creates a `Column` wtih the `pandas_udf` applied to all the columns of the [DataFrame](GroupedData.md#_df) of this [GroupedData](GroupedData.md).
+
+`applyInPandas` executes `flatMapGroupsInPandas` with the underlying Catalyst expression of the `Column` with the `pandas_udf` applied.
+
+In the end, `applyInPandas` creates a [DataFrame](DataFrame.md) with the result.
+
+## cogroup { #cogroup }
+
+```py
+cogroup(
+  self,
+  other: "GroupedData") -> "PandasCogroupedOps"
 ```
 
-```python
-gd1 = df1.groupby("id")
-gd2 = df2.groupby("id")
-
-gd1.cogroup(gd2).applyInPandas(
-  asof_join, "time int, id int, v1 double, v2 string").show()
-```
-
-## <span id="cogroup"> cogroup
-
-```python
-cogroup(self, other)
-```
-
-`cogroup` creates a [PandasCogroupedOps](PandasCogroupedOps.md).
+`cogroup` creates a [PandasCogroupedOps](PandasCogroupedOps.md) for this and the other [GroupedData](GroupedData.md)s.

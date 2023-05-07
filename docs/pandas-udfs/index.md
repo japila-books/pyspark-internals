@@ -121,7 +121,9 @@ root
 ```
 
 ```py
-df.select(to_upper(df.name).alias("upper_name")).show()
+(df
+  .select(to_upper(df.name).alias("upper_name"))
+  .show())
 ```
 
 ```text
