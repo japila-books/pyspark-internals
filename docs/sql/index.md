@@ -5,3 +5,24 @@
 ```py
 from pyspark.sql import *
 ```
+
+The above `*` import imports the following classes:
+
+* `SparkSession`
+* `SQLContext`
+* `HiveContext`
+* `UDFRegistration`
+* `DataFrame`
+* `GroupedData`
+* `Column`
+* `Catalog`
+* [Observation](Observation.md)
+* `Row`
+* `DataFrameNaFunctions`
+* `DataFrameStatFunctions`
+* `Window`
+* `WindowSpec`
+* `DataFrameReader`
+* `DataFrameWriter`
+* `DataFrameWriterV2`
+* `PandasCogroupedOps`
