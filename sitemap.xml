@@ -2,412 +2,412 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://books.japila.pl/pyspark-internals/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/MonitorThread/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/Py4JServer/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/PythonAccumulatorV2/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/PythonBroadcast/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/PythonForeachWriter/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/PythonFunction/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/PythonGatewayServer/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/PythonRDD/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/PythonRunner/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/PythonWorkerFactory/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/Setup/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/SimplePythonFunction/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/SocketAuthHelper/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/SocketAuthServer/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/SocketFuncServer/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/SparkConf/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/SparkContext/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/building-from-sources/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/configuration-properties/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/environment-variables/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/logging/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/overview/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/pyspark/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/arrow-optimization/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/connect/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/demo/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/demo/executing-pyspark-applications-using-spark-submit/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/demo/running-pyspark-application-on-minikube/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/features/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/ml/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/ml/Distributor/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/pandas-on-spark/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/pandas-udfs/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/pyspark/java_gateway/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/pyspark/shell/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/pyspark/pandas/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/pyspark/pandas/DataFrame/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/pyspark/pandas/InternalFrame/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/pyspark/pandas/generic/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/pyspark/pandas/generic/Frame/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/pyspark/sql/UserDefinedFunction/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/pyspark/sql/functions/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/pyspark/sql/udf/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/pyspark/sql/pandas/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/pyspark/sql/pandas/PandasUDFType/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/pyspark/sql/pandas/functions/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/pytorch-distributed/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/pytorch-distributed/TorchDistributor/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/pytorch-distributed/torch_run_process_wrapper/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/runners/ArrowPythonRunner/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/runners/BasePythonRunner/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/runners/BasicPythonArrowOutput/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/runners/PythonArrowOutput/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/runners/PythonRunner/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/runners/PythonUDFRunner/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/runners/ReaderIterator/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/sql/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/sql/AggregateInPandasExec/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/sql/ArrowEvalPython/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/sql/ArrowEvalPythonExec/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/sql/BaseEvalPython/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/sql/DataFrame/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/sql/EvalPythonExec/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/sql/FlatMapGroupsInPandas/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/sql/FlatMapGroupsInPandasExec/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/sql/GroupedData/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/sql/Observation/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/sql/PandasCogroupedOps/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/sql/PandasConversionMixin/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/sql/PandasGroupUtils/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/sql/PandasGroupedOpsMixin/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/sql/PandasMapOpsMixin/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/sql/PythonEvalType/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/sql/PythonSQLMetrics/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/sql/PythonUDF/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/sql/RelationalGroupedDataset/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/sql/SQLContext/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/sql/SparkConversionMixin/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/sql/SparkSession/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/sql/UDFRegistration/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/sql/UserDefinedPythonFunction/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <lastmod>2023-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
