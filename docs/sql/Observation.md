@@ -39,7 +39,7 @@ get(
 ```py
 from pyspark.sql.observation import Observation
 
-ob = Observation("demo")
+observation = Observation("demo")
 ```
 
 ```py
@@ -54,13 +54,20 @@ df = spark.createDataFrame(pandas_df)
 
 ```py
 from pyspark.sql.functions import *
-df.observe(ob, count(lit(1)))
+row_count_metric = count(lit(1)).alias("count")
+observed_df = df.observe(observation, row_count_metric)
 ```
 
 ```py
-df.count()
+observed_df.count()
 ```
 
-```py
-ob.get()
+=== "Python"
+
+    ```py
+    observation.get()
+    ```
+
+```text
+{'count': 5}
 ```
