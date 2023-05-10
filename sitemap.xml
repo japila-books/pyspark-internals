@@ -171,12 +171,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://books.japila.pl/pyspark-internals/pyspark/daemon/</loc>
+         <lastmod>2023-05-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://books.japila.pl/pyspark-internals/pyspark/java_gateway/</loc>
          <lastmod>2023-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/pyspark/shell/</loc>
+         <lastmod>2023-05-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://books.japila.pl/pyspark-internals/pyspark/worker/</loc>
          <lastmod>2023-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
