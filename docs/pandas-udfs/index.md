@@ -138,11 +138,9 @@ root
 +----------+
 ```
 
-=== "Python"
-
-    ```py
-    df.select(my_concat(df.name, df.age)).show(truncate = False)
-    ```
+```py
+df.select(my_concat(df.name, df.age)).show(truncate = False)
+```
 
 ```text
 +----------------------+
@@ -159,6 +157,11 @@ root
 ### Group Aggregate pandas UDF
 
 ```py
+import pandas as pd
+from pyspark.sql.functions import pandas_udf
+```
+
+```py
 @pandas_udf(returnType = "long")
 def my_count(s: pd.Series) -> 'long':
     return pd.Series(s.count())
@@ -166,9 +169,14 @@ def my_count(s: pd.Series) -> 'long':
 
 ```py
 from pyspark.sql.functions import abs
+nums = spark.range(5) # FIXME More meaningful dataset
 grouped_nums = (nums
-    .withColumn("gid", abs((nums.value * 100) % 2))
+    .withColumn("gid", abs((nums.id * 100) % 2))
     .groupBy("gid"))
 count_by_gid_agg = my_count("gid").alias("count")
 counts_by_gid = grouped_nums.agg(count_by_gid_agg)
+```
+
+```py
+counts_by_gid.show()
 ```

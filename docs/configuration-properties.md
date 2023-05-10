@@ -46,7 +46,7 @@ Used when:
 
 The Python module to run a Python worker
 
-Default: `pyspark.worker`
+Default: [pyspark.worker](pyspark/worker.md)
 
 Used when:
 

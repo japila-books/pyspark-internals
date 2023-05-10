@@ -25,7 +25,7 @@ Limitations of Pandas UDAFs:
 
 `SQL_GROUPED_AGG_PANDAS_UDF` is used (on Python side) when:
 
-* `pyspark/worker.py` is requested to `read_single_udf` and `read_udfs`
+* `pyspark/worker.py` is requested to [read_single_udf](../pyspark/worker.md#read_single_udf) and [read_udfs](../pyspark/worker.md#read_udfs)
 * `pyspark/sql/pandas/functions.py` is requested to `_create_pandas_udf` and `pandas_udf`
 
 `SQL_GROUPED_AGG_PANDAS_UDF` is used (on Scala side) when:
@@ -40,7 +40,7 @@ Limitations of Pandas UDAFs:
 
 `SQL_SCALAR_PANDAS_UDF` is used (on Python side) when:
 
-* `pyspark/worker.py` is requested to `read_single_udf` and `read_udfs`
+* `pyspark/worker.py` is requested to [read_single_udf](../pyspark/worker.md#read_single_udf) and [read_udfs](../pyspark/worker.md#read_udfs)
 * `pyspark/sql/pandas/functions.py` is requested to `_create_pandas_udf` and `pandas_udf`
 
 ## SQL_SCALAR_PANDAS_ITER_UDF { #SQL_SCALAR_PANDAS_ITER_UDF }

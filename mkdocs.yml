@@ -177,8 +177,10 @@ nav:
     - logging.md
   - Packages:
     - pyspark:
+      - daemon.py: pyspark/daemon.md
       - java_gateway.py: pyspark/java_gateway.md
       - shell.py: pyspark/shell.md
+      - worker.py: pyspark/worker.md
     - pyspark.pandas:
       - pyspark/pandas/index.md
       - pyspark/pandas/DataFrame.md
