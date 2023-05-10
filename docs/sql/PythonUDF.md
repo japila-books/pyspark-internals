@@ -58,3 +58,12 @@ isScalarPythonUDF(
 * [SQL_BATCHED_UDF](../sql/PythonEvalType.md#SQL_BATCHED_UDF)
 * [SQL_SCALAR_PANDAS_UDF](../sql/PythonEvalType.md#SQL_SCALAR_PANDAS_UDF)
 * [SQL_SCALAR_PANDAS_ITER_UDF](../sql/PythonEvalType.md#SQL_SCALAR_PANDAS_ITER_UDF)
+
+## isGroupedAggPandasUDF { #isGroupedAggPandasUDF }
+
+```scala
+isGroupedAggPandasUDF(
+  e: Expression): Boolean
+```
+
+`isGroupedAggPandasUDF` is `true` when the given `Expression` is a [PythonUDF](PythonUDF.md) with [SQL_GROUPED_AGG_PANDAS_UDF](PythonEvalType.md#SQL_GROUPED_AGG_PANDAS_UDF) eval type. Otherwise, `isGroupedAggPandasUDF` is `false`.
