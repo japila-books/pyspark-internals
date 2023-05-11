@@ -16,7 +16,7 @@
 
 `PythonWorkerFactory` is created when:
 
-* `SparkEnv` is requested to `createPythonWorker` (when `BasePythonRunner` is requested to [compute a partition](runners/BasePythonRunner.md#compute)).
+* `SparkEnv` is requested to [createPythonWorker](SparkEnv.md#createPythonWorker) (for `BasePythonRunner` to [compute a partition](runners/BasePythonRunner.md#compute)).
 
 ### Python Executable { #pythonExec }
 
@@ -90,7 +90,7 @@ A new pair is added in [createSocket](#createSocket) (when [createThroughDaemon]
 
 `PythonWorkerFactory` initializes `daemonModule` internal property for the **Python Daemon Module** when [created](#creating-instance).
 
-`daemonModule` is the value of [spark.python.daemon.module](configuration-properties.md#spark.python.daemon.module) configuration property (if defined) or `pyspark.daemon`.
+`daemonModule` is the value of [spark.python.daemon.module](configuration-properties.md#spark.python.daemon.module) configuration property.
 
 The Python Daemon Module is used when `PythonWorkerFactory` is requested to [create and start a daemon module](#startDaemon).
 
@@ -115,7 +115,7 @@ create(): (Socket, Option[Int])
 
 `create` is used when:
 
-* `SparkEnv` is requested to `createPythonWorker`
+* `SparkEnv` is requested to [createPythonWorker](SparkEnv.md#createPythonWorker)
 
 ### Creating Daemon Worker { #createThroughDaemon }
 

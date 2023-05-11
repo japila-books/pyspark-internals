@@ -173,6 +173,7 @@ nav:
     - SocketAuthServer: SocketAuthServer.md
     - SocketFuncServer: SocketFuncServer.md
     - SocketAuthHelper: SocketAuthHelper.md
+    - SparkEnv: SparkEnv.md
     - logging.md
   - Modules:
     - pyspark:

@@ -22,7 +22,7 @@ Default: (undefined)
 
 The Python module to run the daemon to execute Python workers
 
-Default: `pyspark.daemon`
+Default: [pyspark.daemon](pyspark/daemon.md)
 
 Used when:
 
@@ -32,7 +32,8 @@ Used when:
 
 **spark.python.use.daemon**
 
-Because forking processes from Java is expensive, we prefer to launch a single Python daemon, `pyspark/daemon.py` (by default) and tell it to fork new workers for our tasks. This daemon currently only works on UNIX-based systems now because it uses signals for child management, so we can also fall back to launching workers, `pyspark/worker.py` (by default) directly.
+Because forking processes from Java is expensive, PySpark prefers launching a single Python daemon ([spark.python.daemon.module](#spark.python.daemon.module)) to fork new workers for tasks.
+This daemon currently only works on UNIX-based systems now because it uses signals for child management, so we can also fall back to launching workers ([spark.python.worker.module](#spark.python.worker.module)) directly.
 
 Default: `true` (unless PySpark runs on Windows)
 

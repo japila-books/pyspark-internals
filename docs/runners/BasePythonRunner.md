@@ -99,6 +99,9 @@ compute(
   context: TaskContext): Iterator[OUT]
 ```
 
+!!! note "Runs on Executors"
+    `compute` runs on Spark executors.
+
 `compute` uses the given `TaskContext` to look up the following local properties (if they were specified via `ResourceProfile`):
 
 * `resource.executor.cores`
@@ -118,7 +121,7 @@ Unless `spark.executorEnv.OMP_NUM_THREADS` is explicitly specified (in the [Spar
 * `SPARK_SIMPLIFIED_TRACEBACK` as `1` when [simplifiedTraceback](#simplifiedTraceback) is enabled
 * _others_
 
-`compute` requests the executor's `SparkEnv` to [createPythonWorker](#createPythonWorker) (for the [pythonExec](#pythonExec) and the [envVars](#envVars)).
+`compute` requests `SparkEnv` to [createPythonWorker](../SparkEnv.md#createPythonWorker) (for the [pythonExec](#pythonExec) and the [envVars](#envVars)).
 
 `compute` [creates a new WriterThread](#newWriterThread) (to feed the worker process input from the given `inputIterator`) and starts it.
 
@@ -138,17 +141,3 @@ In the end, `compute` [creates a new ReaderIterator](#newReaderIterator) to read
 * [AggregateInPandasExec](../sql/AggregateInPandasExec.md), [ArrowEvalPythonExec](../sql/ArrowEvalPythonExec.md), `BatchEvalPythonExec`, `FlatMapCoGroupsInPandasExec`, `FlatMapGroupsInPandasExec` `MapInPandasExec`, `WindowInPandasExec` physical operators are executed
 * `PandasGroupUtils` is requested to `executePython`
 * `PythonForeachWriter` is requested for the [outputIterator](../PythonForeachWriter.md#outputIterator)
-
-### Creating Python Worker Process { #createPythonWorker }
-
-```scala
-createPythonWorker(
-  pythonExec: String,
-  envVars: Map[String, String]): (java.net.Socket, Option[Int])
-```
-
-`compute` uses the executor's `SparkEnv` to `createPythonWorker` ([Spark Core]({{ book.spark_core }}/SparkEnv#createPythonWorker)).
-
----
-
-`createPythonWorker` creates a [PythonWorkerFactory](../PythonWorkerFactory.md) (unless already created for the `pythonExec` and the `envVars` pair) to [create a python worker process](../PythonWorkerFactory.md#create).
