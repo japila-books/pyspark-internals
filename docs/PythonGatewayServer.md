@@ -2,7 +2,7 @@
 
 `PythonGatewayServer` is a [command-line application](#main) (_process_) that starts a [Py4JServer](Py4JServer.md) on an ephemeral port.
 
-`PythonGatewayServer` is the Python runner for [pyspark](pyspark.md) shell ([Spark Core]({{ book.spark_core }}/tools/SparkSubmit#PYSPARK_SHELL)).
+`PythonGatewayServer` is the Python runner for `pyspark` shell script ([Spark Core]({{ book.spark_core }}/tools/SparkSubmit#PYSPARK_SHELL)).
 
 ## <span id="main"> main
 

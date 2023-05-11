@@ -1,10 +1,10 @@
 # PySpark
 
-**PySpark** is the Python frontend for Apache Spark.
+**PySpark** is the Python API (_frontend_) for Apache Spark.
 
 ## shell.py
 
-[pyspark](pyspark.md) shell defines [PYTHONSTARTUP]({{ python.docs }}/using/cmdline.html#envvar-PYTHONSTARTUP) environment variable to execute [shell.py](pyspark/shell.md) before the first prompt is displayed in Python interactive mode.
+`pyspark` shell defines [PYTHONSTARTUP]({{ python.docs }}/using/cmdline.html#envvar-PYTHONSTARTUP) environment variable to execute [shell.py](pyspark/shell.md) before the first prompt is displayed in Python interactive mode.
 
 ## Py4J
 

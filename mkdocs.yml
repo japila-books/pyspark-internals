@@ -149,7 +149,6 @@ nav:
     - ... | pandas-on-spark/**.md
     - ... | pandas-udfs/**.md
     - ... | connect/**.md
-    - PySpark Shell: pyspark.md
   - ... | ml/**.md
   - ... | sql/**.md
   - Internals:
@@ -175,8 +174,9 @@ nav:
     - SocketFuncServer: SocketFuncServer.md
     - SocketAuthHelper: SocketAuthHelper.md
     - logging.md
-  - Packages:
+  - Modules:
     - pyspark:
+      - pyspark/index.md
       - daemon.py: pyspark/daemon.md
       - java_gateway.py: pyspark/java_gateway.md
       - shell.py: pyspark/shell.md

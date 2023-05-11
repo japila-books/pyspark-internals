@@ -1,5 +1,11 @@
 # worker.py
 
+`worker.py` is a Python module in [pyspark](index.md) package.
+
+```py
+from pyspark import worker
+```
+
 ## <span id="__main__"> Entry Point
 
 ??? note "Top-Level Code Environment"
