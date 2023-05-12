@@ -147,6 +147,7 @@ nav:
     - ... | arrow-optimization/**.md
     - ... | pytorch-distributed/**.md
     - ... | pandas-on-spark/**.md
+    - ... | pandas-udafs/**.md
     - ... | pandas-udfs/**.md
     - ... | connect/**.md
   - ... | ml/**.md
@@ -190,8 +191,10 @@ nav:
       - pyspark/pandas/generic/index.md
       - pyspark/pandas/generic/Frame.md
     - pyspark.sql:
-      - udf.py: pyspark/sql/udf.md
+      - dataframe.py: pyspark/sql/dataframe.md
       - functions.py: pyspark/sql/functions.md
+      - group.py: pyspark/sql/group.md
+      - udf.py: pyspark/sql/udf.md
       - pyspark/sql/UserDefinedFunction.md
     - pyspark.sql.pandas:
       - pyspark/sql/pandas/index.md

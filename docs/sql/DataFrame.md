@@ -2,7 +2,7 @@
 
 `DataFrame` is a Python class with [PandasMapOpsMixin](PandasMapOpsMixin.md) and [PandasConversionMixin](PandasConversionMixin.md) mixins.
 
-`DataFrame` is in `pyspark.sql.dataframe` module.
+`DataFrame` is defined in [pyspark.sql.dataframe](../pyspark/sql/dataframe.md) module.
 
 ```py
 from pyspark.sql.dataframe import DataFrame

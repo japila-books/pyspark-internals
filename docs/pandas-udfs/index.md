@@ -58,22 +58,11 @@ A return type can be one of the names of `pyspark.sql.types.DataType` instances 
 @pandas_udf(returnType=dataType)
 ```
 
-## Group Aggregate pandas UDFs { #group-aggregate }
+## pandas UDAFs
 
-pandas UDFs can be used as aggregation functions using [GroupedData.agg](../sql/GroupedData.md#agg) operator with the following caveats:
+[pandas User-Defined Aggregate Functions](../pandas-udafs/index.md).
 
-1. There is no partial aggregation with group aggregate UDFs (i.e., a full shuffle is required).
-1. All the data of a group will be loaded into memory, so there is a potential OOM risk if data is skewed and certain groups are too large to fit in memory
-
-!!! note
-    Group aggregate pandas UDFs and built-in aggregation functions cannot be mixed in a single [GroupedData.agg](../sql/GroupedData.md#agg) operator.
-    Otherwise, the following `AnalysisException` is thrown:
-
-    ```text
-    [INVALID_PANDAS_UDF_PLACEMENT] The group aggregate pandas UDF `my_udaf` cannot be invoked together with as other, non-pandas aggregate functions.
-    ```
-
-## Examples
+## Demo
 
 ```py
 import pandas as pd
@@ -152,31 +141,4 @@ df.select(my_concat(df.name, df.age)).show(truncate = False)
 |patryk is 26 years old|
 |maksym is 11 years old|
 +----------------------+
-```
-
-### Group Aggregate pandas UDF
-
-```py
-import pandas as pd
-from pyspark.sql.functions import pandas_udf
-```
-
-```py
-@pandas_udf(returnType = "long")
-def my_count(s: pd.Series) -> 'long':
-    return pd.Series(s.count())
-```
-
-```py
-from pyspark.sql.functions import abs
-nums = spark.range(5) # FIXME More meaningful dataset
-grouped_nums = (nums
-    .withColumn("gid", abs((nums.id * 100) % 2))
-    .groupBy("gid"))
-count_by_gid_agg = my_count("gid").alias("count")
-counts_by_gid = grouped_nums.agg(count_by_gid_agg)
-```
-
-```py
-counts_by_gid.show()
 ```
