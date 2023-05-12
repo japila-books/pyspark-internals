@@ -2,6 +2,8 @@
 
 `BasePythonRunner` is an [abstraction](#contract) of [Python Runners](#implementations).
 
+`BasePythonRunner` is executed as part of Spark tasks (that run on executors).
+
 ??? note "Scala Definition"
 
     `BasePythonRunner` is a type constructor in Scala (_generic class_ in Java) with the following definition:
