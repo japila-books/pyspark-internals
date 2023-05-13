@@ -25,7 +25,14 @@ _prepare_for_python_RDD(
 
 `_prepare_for_python_RDD` creates a `CloudPickleSerializer` to `dumps` the given `command` pair (that creates a `pickled_command`).
 
-`_prepare_for_python_RDD` checks whether the size of the `pickled_command` is above the [broadcast threshold](../PythonUtils.md#getBroadcastThreshold)...FIXME
+If the size of the `pickled_command` is above the [broadcast threshold](../PythonUtils.md#getBroadcastThreshold), `_prepare_for_python_RDD` creates a broadcast variable for `pickled_command` that is in turn `dumps` using the `CloudPickleSerializer` (that overrides the `pickled_command`).
+
+In the end, `_prepare_for_python_RDD` returns the following:
+
+* `pickled_command`
+* `broadcast_vars`
+* [environment](../SparkContext.md#environment)
+* [_python_includes](../SparkContext.md#_python_includes)
 
 ---
 
