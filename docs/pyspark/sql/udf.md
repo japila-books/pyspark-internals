@@ -26,7 +26,7 @@ _create_udf(
     deterministic: bool = True) -> "UserDefinedFunctionLike"
 ```
 
-`_create_udf` creates an [UserDefinedFunction](UserDefinedFunction.md) (with the name of the object to be the name of function `f`).
+`_create_udf` creates a [UserDefinedFunction](UserDefinedFunction.md) (with the name of the object to be the name of function `f`).
 
 ---
 
@@ -65,7 +65,7 @@ _wrap_function(
 
 `_wrap_function` creates a `command` tuple with the given `func` and `returnType`.
 
-`_wrap_function` [_prepare_for_python_RDD](../rdd.md#_prepare_for_python_RDD) for the `command` tuple that builds the input for a[SimplePythonFunction](../../SimplePythonFunction.md):
+`_wrap_function` [_prepare_for_python_RDD](../rdd.md#_prepare_for_python_RDD) for the `command` tuple that builds the input for a [SimplePythonFunction](../../SimplePythonFunction.md):
 
 * `pickled_command` byte array
 * `env`

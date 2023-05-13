@@ -1,8 +1,8 @@
 # UDFRegistration
 
-`UDFRegistration` is available as `spark.udf`.
+`UDFRegistration` is a Python class in [pyspark.sql.udf](../pyspark/sql/udf.md) module.
 
-## register { #register }
+## Registering Python UDF { #register }
 
 ```python
 register(
