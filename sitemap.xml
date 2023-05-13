@@ -51,6 +51,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://books.japila.pl/pyspark-internals/PythonUtils/</loc>
+         <lastmod>2023-05-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://books.japila.pl/pyspark-internals/PythonWorkerFactory/</loc>
          <lastmod>2023-05-13</lastmod>
          <changefreq>daily</changefreq>
@@ -106,11 +111,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://books.japila.pl/pyspark-internals/configuration-properties/</loc>
-         <lastmod>2023-05-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://books.japila.pl/pyspark-internals/environment-variables/</loc>
          <lastmod>2023-05-13</lastmod>
          <changefreq>daily</changefreq>
@@ -127,6 +127,31 @@
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/arrow-optimization/</loc>
+         <lastmod>2023-05-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://books.japila.pl/pyspark-internals/configuration-properties/</loc>
+         <lastmod>2023-05-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://books.japila.pl/pyspark-internals/configuration-properties/spark/</loc>
+         <lastmod>2023-05-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://books.japila.pl/pyspark-internals/configuration-properties/spark.pyspark/</loc>
+         <lastmod>2023-05-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://books.japila.pl/pyspark-internals/configuration-properties/spark.python/</loc>
+         <lastmod>2023-05-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://books.japila.pl/pyspark-internals/configuration-properties/spark.sql.execution/</loc>
          <lastmod>2023-05-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
