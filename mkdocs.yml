@@ -170,6 +170,7 @@ nav:
     - PythonForeachWriter: PythonForeachWriter.md
     - PythonAccumulatorV2: PythonAccumulatorV2.md
     - PythonBroadcast: PythonBroadcast.md
+    - RDD: RDD.md
     - SimplePythonFunction: SimplePythonFunction.md
     - SocketAuthServer: SocketAuthServer.md
     - SocketFuncServer: SocketFuncServer.md
@@ -181,6 +182,7 @@ nav:
       - pyspark/index.md
       - daemon.py: pyspark/daemon.md
       - java_gateway.py: pyspark/java_gateway.md
+      - rdd.py: pyspark/rdd.md
       - shell.py: pyspark/shell.md
       - worker.py: pyspark/worker.md
     - pyspark.pandas:

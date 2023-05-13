@@ -1,10 +1,19 @@
 # udf.py
 
-`udf.py` module belongs to `pyspark.sql` package.
+`udf` module (in `pyspark.sql` package) defines [UDFRegistration](../../sql/UDFRegistration.md).
 
-## <span id="all"> Public Objects
+```py
+from pyspark.sql.udf import *
+```
 
-`udf` module defines [UDFRegistration](../../sql/UDFRegistration.md) as the public object.
+## \_\_all__
+
+??? note "import *"
+    The `import` statement uses the following convention: if a package’s `__init__.py` code defines a list named `__all__`, it is taken to be the list of module names that should be imported when `from package import *` is encountered.
+
+    Learn more in [6.4.1. Importing * From a Package]({{ python.docs }}/tutorial/modules.html#importing-from-a-package).
+
+* [UDFRegistration](../../sql/UDFRegistration.md)
 
 ## _create_udf { #_create_udf }
 
@@ -44,3 +53,33 @@ _create_py_udf(
 `_create_py_udf` is used when:
 
 * [udf](functions.md#udf) is executed
+
+## Creating SimplePythonFunction for Python Function { #_wrap_function }
+
+```py
+_wrap_function(
+  sc: SparkContext,
+  func: Callable[..., Any],
+  returnType: "DataTypeOrString") -> JavaObject
+```
+
+`_wrap_function` creates a `command` tuple with the given `func` and `returnType`.
+
+`_wrap_function` [_prepare_for_python_RDD](../rdd.md#_prepare_for_python_RDD) for the `command` tuple that builds the input for a[SimplePythonFunction](../../SimplePythonFunction.md):
+
+* `pickled_command` byte array
+* `env`
+* `includes`
+* `broadcast_vars`
+
+In the end, `_wrap_function` creates a [SimplePythonFunction](../../SimplePythonFunction.md) with the above and the following from the given [SparkContext](../../SparkContext.md):
+
+* [pythonExec](../../SparkContext.md#pythonExec)
+* [pythonVer](../../SparkContext.md#pythonVer)
+* [_javaAccumulator](../../SparkContext.md#_javaAccumulator)
+
+---
+
+`_wrap_function` is used when:
+
+* `UserDefinedFunction` is requested to [_create_judf](UserDefinedFunction.md#_create_judf)
