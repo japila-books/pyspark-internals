@@ -4,7 +4,7 @@ PySpark uses environment variables to configure execution environment.
 
 ## PYSPARK_DRIVER_PYTHON { #PYSPARK_DRIVER_PYTHON }
 
-The Python Executable in [PySpark Connect](connect/index.md) when [PYSPARK_PYTHON](#PYSPARK_PYTHON) is not defined
+The Python Executable in [PySpark Connect](connect/index.md) unless [PYSPARK_PYTHON](#PYSPARK_PYTHON) is defined
 
 Default: `python3`
 

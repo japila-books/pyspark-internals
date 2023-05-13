@@ -146,6 +146,7 @@ nav:
     - features/index.md
     - ... | arrow-optimization/**.md
     - ... | configuration-properties/**.md
+    - environment-variables.md
     - ... | pytorch-distributed/**.md
     - ... | pandas-on-spark/**.md
     - ... | pandas-udafs/**.md
@@ -157,7 +158,6 @@ nav:
     - Overview: overview.md
     - Setup: Setup.md
     - Building from Sources: building-from-sources.md
-    - Environment Variables: environment-variables.md
     - PythonRunner: PythonRunner.md
     - PythonGatewayServer: PythonGatewayServer.md
     - Py4JServer: Py4JServer.md
