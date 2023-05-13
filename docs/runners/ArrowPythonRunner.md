@@ -34,7 +34,7 @@
 
     `bufferSize` is part of the [BasePythonRunner](BasePythonRunner.md#bufferSize) abstraction.
 
-`bufferSize` is the value of [spark.sql.execution.pandas.udf.buffer.size](../configuration-properties.md#spark.sql.execution.pandas.udf.buffer.size) configuration property.
+`bufferSize` is the value of [spark.sql.execution.pandas.udf.buffer.size](../configuration-properties/index.md#spark.sql.execution.pandas.udf.buffer.size) configuration property.
 
 ## simplifiedTraceback { #simplifiedTraceback }
 
@@ -46,4 +46,4 @@
 
     `simplifiedTraceback` is part of the [BasePythonRunner](BasePythonRunner.md#simplifiedTraceback) abstraction.
 
-`simplifiedTraceback` is the value of [spark.sql.execution.pyspark.udf.simplifiedTraceback.enabled](../configuration-properties.md#spark.sql.execution.pyspark.udf.simplifiedTraceback.enabled) configuration property.
+`simplifiedTraceback` is the value of [spark.sql.execution.pyspark.udf.simplifiedTraceback.enabled](../configuration-properties/index.md#spark.sql.execution.pyspark.udf.simplifiedTraceback.enabled) configuration property.

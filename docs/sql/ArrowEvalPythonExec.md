@@ -27,7 +27,7 @@ title: ArrowEvalPythonExec
 
 ## Maximum Records per Batch { #batchSize }
 
-`batchSize` is the value of [spark.sql.execution.arrow.maxRecordsPerBatch](../configuration-properties.md#spark.sql.execution.arrow.maxRecordsPerBatch) configuration property.
+`batchSize` is the value of [spark.sql.execution.arrow.maxRecordsPerBatch](../configuration-properties/index.md#spark.sql.execution.arrow.maxRecordsPerBatch) configuration property.
 
 `batchSize` is used while [evaluating PythonUDFs](#evaluate).
 

@@ -145,6 +145,7 @@ nav:
   - Features:
     - features/index.md
     - ... | arrow-optimization/**.md
+    - ... | configuration-properties/**.md
     - ... | pytorch-distributed/**.md
     - ... | pandas-on-spark/**.md
     - ... | pandas-udafs/**.md
@@ -156,7 +157,6 @@ nav:
     - Overview: overview.md
     - Setup: Setup.md
     - Building from Sources: building-from-sources.md
-    - Configuration Properties: configuration-properties.md
     - Environment Variables: environment-variables.md
     - PythonRunner: PythonRunner.md
     - PythonGatewayServer: PythonGatewayServer.md
@@ -170,6 +170,7 @@ nav:
     - PythonForeachWriter: PythonForeachWriter.md
     - PythonAccumulatorV2: PythonAccumulatorV2.md
     - PythonBroadcast: PythonBroadcast.md
+    - PythonUtils: PythonUtils.md
     - RDD: RDD.md
     - SimplePythonFunction: SimplePythonFunction.md
     - SocketAuthServer: SocketAuthServer.md

@@ -10,7 +10,7 @@ toPandas(self)
 
 `toPandas` can only be used with [DataFrame](DataFrame.md).
 
-With [Arrow optimization](../configuration-properties.md#arrowPySparkEnabled) enabled, `toPandas` [to_arrow_schema](#to_arrow_schema).
+With [Arrow optimization](../configuration-properties/index.md#arrowPySparkEnabled) enabled, `toPandas` [to_arrow_schema](#to_arrow_schema).
 
 !!! note "pyarrow"
     Arrow Optimization uses `pyarrow` module.
@@ -22,4 +22,4 @@ With [Arrow optimization](../configuration-properties.md#arrowPySparkEnabled) en
 !!! note
     Column order is assumed.
 
-With [Arrow optimization](../configuration-properties.md#arrowPySparkEnabled) disabled, `toPandas` collects the records (`DataFrame.collect`) and creates a `pandas.DataFrame` (with some type _munging_).
+With [Arrow optimization](../configuration-properties/index.md#arrowPySparkEnabled) disabled, `toPandas` collects the records (`DataFrame.collect`) and creates a `pandas.DataFrame` (with some type _munging_).

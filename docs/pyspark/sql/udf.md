@@ -54,7 +54,7 @@ _create_py_udf(
 
 * [udf](functions.md#udf) is executed
 
-## Creating SimplePythonFunction for Python Function { #_wrap_function }
+## Creating SimplePythonFunction for (Pickled) Python Function { #_wrap_function }
 
 ```py
 _wrap_function(

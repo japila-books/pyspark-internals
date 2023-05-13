@@ -21,8 +21,8 @@
 <span id="main-pythonExec">
 `main` determines what python executable to use based on (in that order):
 
-1. [spark.pyspark.driver.python](configuration-properties.md#spark.pyspark.driver.python) configuration property
-1. [spark.pyspark.python](configuration-properties.md#spark.pyspark.python) configuration property
+1. [spark.pyspark.driver.python](configuration-properties/index.md#spark.pyspark.driver.python) configuration property
+1. [spark.pyspark.python](configuration-properties/index.md#spark.pyspark.python) configuration property
 1. `PYSPARK_DRIVER_PYTHON` environment variable
 1. `PYSPARK_PYTHON` environment variable
 1. `python3`
@@ -39,7 +39,7 @@ Environment Variable | Value
  `PYTHONUNBUFFERED` | YES
  [PYSPARK_GATEWAY_PORT](environment-variables.md#PYSPARK_GATEWAY_PORT) | [getListeningPort](Py4JServer.md#getListeningPort)
  [PYSPARK_GATEWAY_SECRET](environment-variables.md#PYSPARK_GATEWAY_SECRET) | [secret](Py4JServer.md#secret)
- `PYSPARK_PYTHON` | [spark.pyspark.python](configuration-properties.md#spark.pyspark.python) if defined
+ `PYSPARK_PYTHON` | [spark.pyspark.python](configuration-properties/index.md#spark.pyspark.python) if defined
  `PYTHONHASHSEED` | `PYTHONHASHSEED` env var if defined
  `OMP_NUM_THREADS` | `spark.driver.cores` unless defined
 

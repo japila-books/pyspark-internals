@@ -33,7 +33,7 @@ The Python executable is the [pythonExec](PythonFunction.md#pythonExec) of the f
 
 `useDaemon` is enabled when the following all hold:
 
-* [spark.python.use.daemon](configuration-properties.md#spark.python.use.daemon) is enabled
+* [spark.python.use.daemon](configuration-properties/index.md#spark.python.use.daemon) is enabled
 * The operating system is not MS Windows (based on `os.name` JVM property) as it works on UNIX-based systems only (because it uses signals for child management)
 
 `useDaemon` flag is used when `PythonWorkerFactory` is requested for the following:
@@ -90,13 +90,13 @@ A new pair is added in [createSocket](#createSocket) (when [createThroughDaemon]
 
 `PythonWorkerFactory` initializes `daemonModule` internal property for the **Python Daemon Module** when [created](#creating-instance).
 
-`daemonModule` is the value of [spark.python.daemon.module](configuration-properties.md#spark.python.daemon.module) configuration property.
+`daemonModule` is the value of [spark.python.daemon.module](configuration-properties/index.md#spark.python.daemon.module) configuration property.
 
 The Python Daemon Module is used when `PythonWorkerFactory` is requested to [create and start a daemon module](#startDaemon).
 
 ### Worker { #workerModule }
 
-`PythonWorkerFactory` uses [spark.python.worker.module](configuration-properties.md#PYTHON_WORKER_MODULE) configuration property to specify the **Python Worker Module**.
+`PythonWorkerFactory` uses [spark.python.worker.module](configuration-properties/index.md#PYTHON_WORKER_MODULE) configuration property to specify the **Python Worker Module**.
 
 The Python Worker Module is used when `PythonWorkerFactory` is requested to [create and start a worker](#createSimpleWorker).
 
