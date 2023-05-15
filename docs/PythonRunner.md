@@ -1,10 +1,10 @@
 # PythonRunner
 
-`PythonRunner` is a [command-line application](#main) to launch Python applications.
+`PythonRunner` is a [command-line application](#main) that is launched to run Python applications on Apache Spark using `spark-submit` shell script ([Spark Core]({{ book.spark_core }}/tools/spark-submit/)).
 
 `PythonRunner` is used by [spark-submit](demo/executing-pyspark-applications-using-spark-submit.md).
 
-`PythonRunner` executes a configured [python executable](#main-pythonExec) as a subprocess and then has it connect back to the JVM to access system properties, etc.
+`PythonRunner` executes a configured [python executable](#main-pythonExec) as a subprocess that is supposed to connect back to the JVM to access Spark services.
 
 ## Arguments
 
@@ -14,7 +14,7 @@
 1. Extra python files (`pyFiles`)
 1. Application arguments
 
-## <span id="main"> main
+## main
 
 `main` takes the [arguments](#arguments) from command line.
 
@@ -44,9 +44,3 @@ Environment Variable | Value
  `OMP_NUM_THREADS` | `spark.driver.cores` unless defined
 
 `main` waits for the Python process to finish and requests the `Py4JServer` to [shutdown](Py4JServer.md#shutdown).
-
-## Demo
-
-```text
-./bin/spark-class org.apache.spark.deploy.PythonRunner
-```

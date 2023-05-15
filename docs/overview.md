@@ -2,6 +2,38 @@
 
 **PySpark** is the Python API (_frontend_) for Apache Spark.
 
+## How It Works
+
+When a Python script is executed using `spark-submit` shell script ([Spark Core]({{ book.spark_core }}/tools/spark-submit/)), [PythonRunner](PythonRunner.md) is started.
+
+```text
+./bin/spark-submit hello_pyspark.py
+```
+
+It looks similar to the following:
+
+```text
+./bin/spark-class org.apache.spark.deploy.PythonRunner hello_pyspark.py ""
+```
+
+`PythonRunner` waits until a [Py4JServer](Py4JServer.md) is started (on a `py4j-gateway-init` daemon thread).
+
+```shell
+$ jps -lm | grep hello_pyspark.py
+10557 org.apache.spark.deploy.SparkSubmit hello_pyspark.py
+```
+
+`PythonRunner` launches a Python process and waits till it finishes.
+
+```shell
+$ ps -o pid,command | grep python3 | grep -v grep
+12607 python3 /Users/jacek/dev/oss/spark/hello_pyspark.py
+```
+
+```shell
+sudo lsof -p 12607
+```
+
 ## shell.py
 
 `pyspark` shell defines [PYTHONSTARTUP]({{ python.docs }}/using/cmdline.html#envvar-PYTHONSTARTUP) environment variable to execute [shell.py](pyspark/shell.md) before the first prompt is displayed in Python interactive mode.
