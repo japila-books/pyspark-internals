@@ -155,7 +155,6 @@ nav:
   - ... | ml/**.md
   - ... | sql/**.md
   - Internals:
-    - Overview: overview.md
     - Setup: Setup.md
     - Building from Sources: building-from-sources.md
     - PythonRunner: PythonRunner.md
