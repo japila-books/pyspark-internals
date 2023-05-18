@@ -121,6 +121,21 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://books.japila.pl/pyspark-internals/python-api/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://books.japila.pl/pyspark-internals/scala-api/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://books.japila.pl/pyspark-internals/tags/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://books.japila.pl/pyspark-internals/arrow-optimization/</loc>
          <lastmod>2023-05-18</lastmod>
          <changefreq>daily</changefreq>
@@ -482,6 +497,21 @@
     </url>
     <url>
          <loc>https://books.japila.pl/pyspark-internals/sql/UserDefinedPythonFunction/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://books.japila.pl/pyspark-internals/tags/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://books.japila.pl/pyspark-internals/python-api/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://books.japila.pl/pyspark-internals/scala-api/</loc>
          <lastmod>2023-05-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
