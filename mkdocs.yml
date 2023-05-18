@@ -109,12 +109,14 @@ extra:
   py4j:
     version: 0.10.9
     doc: https://www.py4j.org
+    docs: https://www.py4j.org
     javadoc: https://www.py4j.org/_static/javadoc
   python:
     version: 3.11
     docs: https://docs.python.org/3
     api: https://docs.python.org/3
     peps: https://peps.python.org
+    realpython: https://realpython.com
   pytorch:
     docs: https://pytorch.org/docs/stable
     github: https://github.com/pytorch/pytorch
@@ -193,11 +195,7 @@ nav:
       - pyspark/pandas/generic/index.md
       - pyspark/pandas/generic/Frame.md
     - pyspark.sql:
-      - dataframe.py: pyspark/sql/dataframe.md
-      - functions.py: pyspark/sql/functions.md
-      - group.py: pyspark/sql/group.md
-      - udf.py: pyspark/sql/udf.md
-      - pyspark/sql/UserDefinedFunction.md
+      - ... | flat | pyspark/sql/**.md
     - pyspark.sql.pandas:
       - pyspark/sql/pandas/index.md
       - functions.py: pyspark/sql/pandas/functions.md

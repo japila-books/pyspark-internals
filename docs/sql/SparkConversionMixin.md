@@ -1,3 +1,3 @@
 # SparkConversionMixin
 
-`SparkConversionMixin` is a Python mixin for [SparkSession](SparkSession.md) class.
+`SparkConversionMixin` is a Python mixin for [SparkSession](../pyspark/sql/SparkSession.md) class.
