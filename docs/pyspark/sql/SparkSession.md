@@ -1,3 +1,8 @@
+---
+tags:
+  - Python
+---
+
 # SparkSession
 
 `SparkSession` is a Python class in [pyspark.sql.session](session.md) module.

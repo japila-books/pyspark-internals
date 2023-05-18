@@ -15,6 +15,9 @@ theme:
   icon:
     logo: material/book-open-page-variant
     repo: fontawesome/brands/github
+    tag:
+      python: fontawesome/brands/python
+      scala: simple/scala
   features:
     # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#adding-annotations
     - content.code.annotate
@@ -82,13 +85,15 @@ plugins:
   # https://squidfunk.github.io/mkdocs-material/reference/#built-in-meta-plugin
   - meta
   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/
-  # - tags:
-  #     enabled: !ENV [CI, false]
-  #     tags_extra_files:
-  #       developer-api.md:
-  #         - DeveloperApi
-  # https://github.com/squidfunk/mkdocs-material/issues/5241
-  # # https://squidfunk.github.io/mkdocs-material/reference/#built-in-typeset-plugin
+  - tags:
+      # enabled: !ENV [CI, false]
+      tags_file: tags.md
+      tags_extra_files:
+        python-api.md:
+          - python
+        scala-api.md:
+          - scala
+  # https://squidfunk.github.io/mkdocs-material/reference/#built-in-typeset-plugin
   - typeset
 
 extra:
@@ -140,7 +145,8 @@ extra:
     jira: https://issues.apache.org/jira/browse
   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/#tag-icons-and-identifiers
   tags:
-    DeveloperApi: developerapi
+    Python: python
+    Scala: scala
 
 nav:
   - index.md
@@ -153,6 +159,10 @@ nav:
     - ... | pandas-on-spark/**.md
     - ... | pandas-udafs/**.md
     - ... | pandas-udfs/**.md
+    - PySpark API:
+      - tags.md
+      - python-api.md
+      - scala-api.md
     - ... | connect/**.md
   - ... | ml/**.md
   - ... | sql/**.md

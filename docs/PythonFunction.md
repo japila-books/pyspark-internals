@@ -1,3 +1,8 @@
+---
+tags:
+  - Scala
+---
+
 # PythonFunction
 
 `PythonFunction` is an [abstraction](#contract) of the [metadata](#implementations) of a [Python function](sql/PythonUDF.md#func) of a [PythonUDF](sql/PythonUDF.md).
