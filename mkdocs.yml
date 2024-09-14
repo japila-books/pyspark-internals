@@ -7,7 +7,7 @@ repo_name: pyspark-internals
 repo_url: https://github.com/japila-books/pyspark-internals
 edit_uri: edit/main/docs/
 
-copyright: Copyright &copy; 2023 Jacek Laskowski
+copyright: Copyright &copy; 2023-2024 Jacek Laskowski
 
 theme:
   name: material
@@ -62,9 +62,7 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.critic
   - pymdownx.details
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.emoji
   - pymdownx.inlinehilite
   - pymdownx.magiclink
   - pymdownx.mark
@@ -108,9 +106,11 @@ extra:
   java:
     api: https://docs.oracle.com/en/java/javase/17/docs/api/java.base
   pandas:
-    version: 1.5.0
+    version: 2.2.0
     api: https://pandas.pydata.org/docs/reference/api
     home: https://pandas.pydata.org/
+  pyarrow:
+    version: 17.0.0
   py4j:
     version: 0.10.9
     doc: https://www.py4j.org
@@ -140,8 +140,8 @@ extra:
     - icon: fontawesome/brands/mastodon
       link: https://fosstodon.org/@jaceklaskowski
   spark:
-    version: 3.4.0
-    github: https://github.com/apache/spark/tree/v3.4.0
+    version: 3.5.2
+    github: https://github.com/apache/spark/tree/v3.5.2
     jira: https://issues.apache.org/jira/browse
   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/#tag-icons-and-identifiers
   tags:
