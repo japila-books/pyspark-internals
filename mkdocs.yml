@@ -163,6 +163,7 @@ nav:
       - tags.md
       - python-api.md
       - scala-api.md
+    - ... | udts/**.md
     - ... | connect/**.md
   - ... | ml/**.md
   - ... | sql/**.md
