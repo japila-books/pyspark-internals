@@ -400,4 +400,8 @@
          <loc>https://books.japila.pl/pyspark-internals/sql/UserDefinedPythonFunction/</loc>
          <lastmod>2024-12-29</lastmod>
     </url>
+    <url>
+         <loc>https://books.japila.pl/pyspark-internals/udts/</loc>
+         <lastmod>2024-12-29</lastmod>
+    </url>
 </urlset>
